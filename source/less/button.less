@@ -1,0 +1,42 @@
+
+.button {
+    display: inline-block;
+    background-color: @var-green;
+    color: @var-white;
+    padding: 11px;
+    max-width: 280px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    user-select: none; 
+}
+
+.button:hover, .button:focus {
+    background-color: @var-hover-green;
+}
+
+.button:active {
+    background-color: @var-active-green;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button--grey {
+    display: inline-block;
+    background-color: @var-lightgrey;
+    color: @var-grey;
+    padding: 11px 40px;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.button--grey:hover, .button--grey:focus {
+    background-color: @var-hover-lightgrey;
+}
+
+.button--grey:active {
+    background-color: @var-hover-lightgrey;
+    color: @var-active-grey;
+}
+
+

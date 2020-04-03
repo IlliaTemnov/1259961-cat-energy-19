@@ -1,0 +1,136 @@
+.main-catalog {
+    display: block;
+}
+.main-catalog__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.main-catalog__title {
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 37px;
+    padding: 30px 20px 36px;
+    margin: 0;
+}
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    min-height: 210px;
+    padding: 25px 20px;
+    border-top: 1px solid @var-lightgrey;
+}
+.main-catalog__list-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.list-item__description {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: @var-grey;
+    min-width: 132px;
+    text-align: left;
+}
+.list-item__description td:last-child{
+    display: inline-block;
+    min-width: 82px;
+    text-align: right;
+}
+.list-item__title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 75px;
+    margin-bottom: 15px;
+}
+.list-item__button {
+    min-width: 258px;
+    text-align: center;
+}
+.list-item__image {
+    display: block;
+    min-width: 140px;
+    min-height: 124px;
+    background-position: center;
+}
+.list-item__image--chickensmall {
+    background-image: url(../img/chicken-small-mobile@1x.jpg);
+    background-repeat: no-repeat;
+  }
+.list-item__image--chickenbig {
+    background-image: url(../img/chicken-big-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.list-item__image--fishsmall {
+    background-image: url(../img/fish-small-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.list-item__image--fishbig {
+    background-image: url(../img/fish-big-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.list-item__image--buckweatsmall {
+    background-image: url(../img/buckwheat-small-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.list-item__image--buckweatbig{
+    background-image: url(../img/buckwheat-big-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.list-item__image--ricesmall{
+    background-image: url(../img/rice-small-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+.main-catalog__more {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 210px;
+    border-top: 1px solid @var-lightgrey;
+    border-bottom: 1px solid @var-lightgrey;
+    padding: 80px 20px 25px;
+    box-sizing: border-box;
+}
+.main-catalog__more-title {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Oswald';
+    color: @var-black;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+.main-catalog__more-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-image: url(../img/icon-plus-mobile.svg);
+    opacity: 0.2;
+    top: -55px;
+    left: 50%-5px;
+}
+.main-catalog__more-description {
+    display: inline-block; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 16px;
+    color: @var-grey;
+}
+.main-catalog__more-button {
+    min-width: 200px;
+    text-align: center;
+}
+
+

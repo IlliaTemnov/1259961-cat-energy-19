@@ -8,163 +8,176 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="logo"> 
-        <img src="./source/img/logo-mobile.svg"  width="33" height="39" alt="Логотип" class="logo-image">
-
-        <img src="./source/img/logo-mobile-header.svg" width="101" height="18"  alt="Надпись Cat Energy" class="logo-name-image">
-      </a>
-      <nav class="main-nav">
-        <button type="button" class="main-nav__toggle"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"> <a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <a href="#" class="logo">
+          <img src="img/logo-mobile.svg"  width="191" height="39" alt="Логотип" class="logo-image">
+        </a>
+        <nav class="hamburger-menu menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+            <ul class="menu__box">
+              <li class="menu__item"><a href="index.html" class="menu__item-link">Главная</a></li>
+              <li class="menu__item"><a href="catalog.html" class="menu__item-link--active">Каталог продукции</a></li>
+              <li class="menu__item"><a href="form.html" class="menu__item-link">Подбор программы</a></li>
+            </ul>
+        </nav>
+      </header>
     <main class="page-main">
         <section class="main-catalog">
-            <h1 class="main-catalog__title main-title">Каталог продукции</h1>
+            <h1 class="main-catalog__title medium-title">Каталог продукции</h1>
             <ul class="main-catalog__list">
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>500г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Курица</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>700 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--chickensmall"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>500г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Курица</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>700 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>1000г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Курица</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>1000 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--chickenbig" ></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>1000г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Курица</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>1000 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>500г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Рыба</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>700 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--fishsmall"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>500г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Рыба</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>700 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>1000г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Рыба</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>1000 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--fishbig"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>1000г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Рыба</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>1000 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>700г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Гречка</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>400 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--buckweatsmall"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>700г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Гречка</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>400 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy Slim 1000 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>1000г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Гречка</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>700 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--buckweatbig"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy Slim 1000 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>1000г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Гречка</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>700 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
                 <li class="main-catalog__list-item list-item">
-                    <div class="list-item__image"></div>
-                    <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
-                    <table class="list-item__description">
-                        <tr>
-                            <td>Объем</td>
-                            <td>500г</td>
-                        </tr>
-                        <tr>
-                            <td>Вкус</td>
-                            <td>Рис</td>
-                        </tr>
-                        <tr>
-                            <td>Цена</td>
-                            <td>500 Р.</td>
-                        </tr>
-                    </table>
+                    <div class="list-item__image list-item__image--ricesmall"></div>
+                    <div class="main-catalog__list-wrapper">
+                        <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
+                        <table class="list-item__description">
+                            <tr>
+                                <td>Объем</td>
+                                <td>500г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Рис</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>500 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
                     <a href="#" class="list-item__button button">Заказать</a>
                 </li>
             </ul>
             <div class="main-catalog__more">
-                <h3>Показать еще 100500 товаров</h3>
-                <span>На самом деле вкусов гораздо больше!</span>
+                <h3 class="main-catalog__more-title">Показать еще 100500 товаров</h3>
+                <span class="main-catalog__more-description">На самом деле вкусов гораздо больше!</span>
                 <a href="#" class="main-catalog__more-button button--grey">Показать все</a>
             </div>
         </section>
@@ -211,7 +224,7 @@
         </section>
     </main>
     <footer class="page-footer">
-        <a href="#" class="logo--footer"><img src="./source/img/logo-mobile-header.svg" width="128" height="24" alt="Надпись Cat Energy"></a>
+        <a href="#" class="logo--footer"><img src="img/logo-footer.svg" width="128" height="24" alt="Надпись Cat Energy"></a>
         <ul class="page-footer__social social">
           <li class="social__item"><a href="#" class="social__item-link">
             <img src="./img/mvk.svg" alt="Вконтакте"  class="social__item-link-image" width="22" height="12">
