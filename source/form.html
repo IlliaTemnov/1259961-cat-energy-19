@@ -8,24 +8,24 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="logo"> 
-        <img src="./source/img/logo-mobile.svg"  width="33" height="38" alt="Логотип" class="logo-image">
-        <img src="./source/img/logo-mobile-header.svg" width="101" height="18"  alt="Надпись Cat Energy" class="logo-name-image">
+      <a href="#" class="logo">
+        <img src="img/logo-mobile.svg"  width="191" height="39" alt="Логотип" class="logo-image">
       </a>
-      <nav class="main-nav">
-        <button type="button" class="main-nav__toggle"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+      <nav class="hamburger-menu menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+          <ul class="menu__box">
+            <li class="menu__item"><a href="index.html" class="menu__item-link">Главная</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__item-link">Каталог продукции</a></li>
+            <li class="menu__item"><a href="form.html" class="menu__item-link--active">Подбор программы</a></li>
           </ul>
-        </div>
       </nav>
     </header>
     <main class="page-main">
         <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-            <h1 class="form__title site-title">Подбор программы</h1>
+            <h1 class="form__title medium-title">Подбор программы</h1>
             <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="form__radio-wraper">
               <label for="name" class="form__label">Имя:* <input type="text" id="name" placeholder="Барсик" class="form__text-input"></label>
@@ -42,7 +42,7 @@
               <label for="email">E-mail:*<input type="email" id="email" class="form__text-input--email" placeholder="kuklachev@gmail.com"></label>
               <label for="tel">E-mail:*<input type="tel" id="tel" class="form__text-input--tel" placeholder="8 (960) 900-60-90"></label>
             </div>
-            <h3 class="form__contacts small-title">Комментарий</h3>
+            <label for="comment" class="form__contacts">Комментарий</label>
             <textarea name="comment" id="comment" cols="33" rows="7" class="form__textarea"></textarea>
 
             <h3 class="form__contacts small-title">Дополнительно</h3>
@@ -58,7 +58,7 @@
         </form>
     </main>
     <footer class="page-footer">
-      <a href="#" class="logo--footer"><img src="./source/img/logo-mobile-header.svg" width="128" height="24" alt="Надпись Cat Energy"></a>
+      <a href="#" class="logo--footer"><img src="img/logo-footer.svg" width="128" height="24" alt="Надпись Cat Energy"></a>
       <ul class="page-footer__social social">
         <li class="social__item"><a href="#" class="social__item-link">
           <img src="./img/mvk.svg" alt="Вконтакте"  class="social__item-link-image" width="22" height="12">
