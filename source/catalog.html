@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo-mobile.svg"  width="191" height="39" alt="Логотип" class="logo-image">
         </a>
         <nav class="hamburger-menu menu">
@@ -184,44 +184,54 @@
         <section class="extra-catalog">
             <h1 class="extra-catalog__title">Дополнительные товары</h1>
             <ul  class="extra-catalog__list">
-                <li>
+                <li class="extra-catalog__item">
                     <h3 class="extra-catalog__item-title">Сахарозаменитель</h3>
                     <div class="extra-catalog__item-wraper">
-                        <span class="extra-catalog__item-size">1 упаковка (100 г)</span>
-                        <span class="extra-catalog__item-price">200 Р.</span>
+                        <span class="extra-catalog__item-description">1 упаковка (100 г)</span>
+                        <span class="extra-catalog__item-description">200 Р.</span>
                     </div>
                     <a href="#" class="extra-catalog__list-item-button button">Заказать</a>
                 </li>
-                <li>
+                <li class="extra-catalog__item">
                     <h3 class="extra-catalog__item-title">Питьевая вода</h3>
                     <div class="extra-catalog__item-wraper">
-                        <span class="extra-catalog__item-size">5 литров</span>
-                        <span class="extra-catalog__item-price">50 Р.</span>
+                        <span class="extra-catalog__item-description">5 литров</span>
+                        <span class="extra-catalog__item-description">50 Р.</span>
                     </div>
                     <a href="#" class="extra-catalog__list-item-button button">Заказать</a>
                 </li>
-                <li>
+                <li class="extra-catalog__item">
                     <h3 class="extra-catalog__item-title">Молоко</h3>
                     <div class="extra-catalog__item-wraper">
-                        <span class="extra-catalog__item-size">1 литр</span>
-                        <span class="extra-catalog__item-price">100 Р.</span>
+                        <span class="extra-catalog__item-description">1 литр</span>
+                        <span class="extra-catalog__item-description">100 Р.</span>
                     </div>
                     <a href="#" class="extra-catalog__list-item-button button">Заказать</a>
                 </li>
-                <li>
+                <li class="extra-catalog__item">
                     <h3 class="extra-catalog__item-title">Витамины</h3>
                     <div class="extra-catalog__item-wraper">
-                        <span class="extra-catalog__item-size">1 упаковка (30 г)</span>
-                        <span class="extra-catalog__item-price">300 Р.</span>
+                        <span class="extra-catalog__item-description">1 упаковка (30 г)</span>
+                        <span class="extra-catalog__item-description">300 Р.</span>
                     </div>
                     <a href="#" class="extra-catalog__list-item-button button">Заказать</a>
                 </li>
             </ul>
+            <div class="stock">
+                <h3 class="stock__title visually-hidden">Акция</h3>
+                <div class="stock__description"><span class="stock__description-text">Закажите все </span ><span class="stock__description-text">и получите чехол для </span><span class="stock__description-text">кота в подарок!</span></div>
+            </div>
         </section>
-        <section class="stock">
-            <h3 class="stock__title visually-hidden">Акция</h3>
-            <p class="stock__description">Закажите все и получите чехол для кота в подарок!</p>
-        </section>
+        <section class="map">
+            <div class="map__contacts contacts--grey">
+              <h3 class="contacts__title"><p>Приглашаем</p> к сотрудничеству дилеров!</h3>
+              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+            <div class="map__treasure" id="map">
+              <span class="map__treasure-pin"></span>
+            </div>
+            <h3 class="map__title visually-hidden">Карта</h3>
+          </section>
     </main>
     <footer class="page-footer">
         <a href="#" class="logo--footer"><img src="img/logo-footer.svg" width="128" height="24" alt="Надпись Cat Energy"></a>
