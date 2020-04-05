@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="img/logo-mobile.svg"  width="191" height="39" alt="Логотип" class="logo-image">
       </a>
       <nav class="hamburger-menu menu">
@@ -27,35 +27,86 @@
         <form action="https://echo.htmlacademy.ru" method="POST" class="form">
             <h1 class="form__title medium-title">Подбор программы</h1>
             <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-            <div class="form__radio-wraper">
-              <label for="name" class="form__label">Имя:* <input type="text" id="name" placeholder="Барсик" class="form__text-input"></label>
-              <label for="weight" class="form__label">Вес (кг):* <input type="text" id="weight" placeholder="7" class="form__text-input"></label>
-              <label for="age" class="form__label">Возраст (лет): <input type="text" id="age" placeholder="7" class="form__text-input"></label>
+            <div class="form__text-wraper">
+              <label for="name" class="form__label-text">
+                 Имя:* 
+                 <input type="text" id="name" placeholder="Барсик" class="form__text-input">
+              </label>
+              <label for="weight" class="form__label-text">
+                Вес (кг):* 
+                <input type="text" id="weight" placeholder="7" class="form__text-input">
+              </label>
+              <label for="age" class="form__label-text">
+                Возраст (лет):
+                <input type="text" id="age" placeholder="7" class="form__text-input">
+              </label>
             </div>
             <div class="form__radio-wraper">
-              <label for="diet"><input type="radio" id="diet" class="form__radio-input" checked>Похудение</label>
-              <label for="mass"><input type="radio" id="mass" class="form__radio-input">Набор массы</label>
-              <label for="nescience"><input type="radio" id="nescience" class="form__radio-input">Не знаю (Нужен ваш совет)</label>
+              <label for="diet" class="form__label-radio">
+                <input type="radio" id="diet" class="form__radio-input visually-hidden" checked>
+                <span class="form__radio-box"></span>
+                Похудение
+              </label>
+              <label for="mass" class="form__label-radio">
+                <input type="radio" id="mass" class="form__radio-input visually-hidden">
+                <span class="form__radio-box"></span>
+                Набор массы
+              </label>
+              <label for="nescience" class="form__label-radio">
+                <input type="radio" id="nescience" class="form__radio-input visually-hidden">
+                <span class="form__radio-box"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
             </div>
               <h3 class="form__contacts small-title">Контактные данные (владельца кота)</h3>
             <div class="form__contacts-wraper"></div>
-              <label for="email">E-mail:*<input type="email" id="email" class="form__text-input--email" placeholder="kuklachev@gmail.com"></label>
-              <label for="tel">E-mail:*<input type="tel" id="tel" class="form__text-input--tel" placeholder="8 (960) 900-60-90"></label>
+              <label for="email" class="form__label-text">
+                E-mail:*
+                <input type="email" id="email" class="form__text-input" placeholder="kuklachev@gmail.com">
+                <span class="form__text--email"></span>
+              </label>
+              <label for="tel" class="form__label-text">
+                Телефон:*
+                <input type="tel" id="tel" class="form__text-input" placeholder="8 (960) 900-60-90">
+                <span class="form__text--phone"></span>
+              </label>
             </div>
-            <label for="comment" class="form__contacts">Комментарий</label>
-            <textarea name="comment" id="comment" cols="33" rows="7" class="form__textarea"></textarea>
+            <label for="comment" class="form__comments small-title">Комментарий</label>
+            <textarea name="comment" id="comment" cols="33" rows="7" class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
 
-            <h3 class="form__contacts small-title">Дополнительно</h3>
+            <h3 class="form__additional small-title">Дополнительно</h3>
             <div class="checkbox-wraper">
-              <label for="nosugar"><input type="checkbox" id="nosugar" class="form__checkbox-input" checked>Сахарозаменитель</label>
-              <label for="water"><input type="checkbox" id="water" class="form__checkbox-input">Питьевая вода</label>
-              <label for="milk"><input type="checkbox" id="milk" class="form__checkbox-input">Молоко</label>
-              <label for="vitamin"><input type="checkbox" id="vitamin" class="form__checkbox-input">Витамины</label>
+              <label for="nosugar" class="form__label-checkbox">
+                <input type="checkbox" id="nosugar" class="form__checkbox-input visually-hidden" checked> 
+                <span class="form__check-box"></span>
+                 Сахарозаменитель</label>
+              <label for="water" class="form__label-checkbox">
+                <input type="checkbox" id="water" class="form__checkbox-input visually-hidden">
+                <span class="form__check-box"></span>
+                Питьевая вода</label>
+              <label for="milk" class="form__label-checkbox">
+                <input type="checkbox" id="milk" class="form__checkbox-input visually-hidden">
+                <span class="form__check-box"></span>
+                Молоко</label>
+              <label for="vitamin" class="form__label-checkbox">
+                <input type="checkbox" id="vitamin" class="form__checkbox-input visually-hidden">
+                <span class="form__check-box"></span>
+                Витамины</label>
             </div>
 
             <button class="form__button button">Отправить заявку</button>
-            <span>* — Обязательные поля</span>
+            <span class="form__required">* — Обязательные поля</span>
         </form>
+        <section class="map">
+          <div class="map__contacts contacts--grey">
+            <h3 class="contacts__title"><p>Приглашаем</p> к сотрудничеству дилеров!</h3>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <div class="map__treasure" id="map">
+            <span class="map__treasure-pin"></span>
+          </div>
+          <h3 class="map__title visually-hidden">Карта</h3>
+        </section>
     </main>
     <footer class="page-footer">
       <a href="#" class="logo--footer"><img src="img/logo-footer.svg" width="128" height="24" alt="Надпись Cat Energy"></a>

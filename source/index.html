@@ -72,26 +72,29 @@
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="example__benefit-list benefit-list">
           <li class="benefit-list__item">
-            <span>5 кг</span>
-            <span>снижение веса</span>
+            <span class="benefit-list__item-title">5 кг</span>
+            <span class="benefit-list__item-description">снижение веса</span>
           </li>
           <li class="benefit-list__item">
-            <span>60 дней</span>
-            <span>затрачено времени</span>
+            <span class="benefit-list__item-title">60 дней</span>
+            <span class="benefit-list__item-description">затрачено времени</span>
           </li>
         </ul>
         <h3 class="example__cost">Затраты на питание: 15 000 руб.</h3>
         <div class="example__slider">
-          <div class="example__slider-controls">
-            <label for="result-before">Было</label>
-            <label for="result-after">Стало</label>
-        </div>
         <ul class="example__slider-list slider-list">
-          <li class="slider-list__item" id="slide1">
+          <li class="slider-list__item slider-list__item--before" id="result-before">
           </li>
-          <li class="slider-list__item" id="slide2">
+          <li class="slider-list__item slider-list__item--after" id="result-after">
           </li>
         </ul>
+        <div class="example__slider-controls">
+          <label for="result-before" class="example__slider-controls-before">Было</label>
+          <div class="example__slider-controls-scale">
+            <span class="example__slider-controls-scalescroll"></span>
+          </div>
+          <label for="result-after" class="example__slider-controls-after">Стало</label>
+      </div>
         </div>
       </section>
       <section class="map">
@@ -99,7 +102,11 @@
           <h3 class="contacts__title"><p>Приглашаем</p> к сотрудничеству дилеров!</h3>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="map__treasure"></div>
+        <div class="map__treasure" id="map">
+          <span class="map__treasure-pin"></span>
+         
+          </script>
+        </div>
         <h3 class="map__title visually-hidden">Карта</h3>
       </section>
     </main>

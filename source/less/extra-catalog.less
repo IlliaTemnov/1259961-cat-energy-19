@@ -1,0 +1,121 @@
+.extra-catalog__title {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 30px 19px;
+    min-height: 86px;
+    min-width: 320px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: @var-black;
+}
+.extra-catalog__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    background-color: @var-green;
+    right: 0px;
+    top: 50%+2px;
+}
+.extra-catalog__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.extra-catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 128px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+.extra-catalog__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: @var-lightgrey;
+    top: 0;
+    left: 20;
+}
+.extra-catalog__item-title {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 16px;
+}
+.extra-catalog__item-wraper {
+    display: flex;
+    min-width: 280px;
+    justify-content: space-between;
+}
+.extra-catalog__item-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: @var-grey;
+    margin-bottom: 14px;
+}
+.extra-catalog__list-item-button {
+    text-align: center;
+}
+.stock {
+    display: block;
+    height: 360px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 39px 20px 32px 20px;
+}
+.stock::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: @var-lightgrey;
+    top: 0;
+    left: 20;
+}
+.stock__description {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    min-width: 280px;
+    min-height: 289px;
+    margin: 0;
+    background-image: url(../img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: @var-white;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 190px 60px 40px 60px;
+}
+.stock__description::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    background-image: url('../img/gift.png');
+    background-repeat: no-repeat;
+    bottom: 55%;
+    left: 40%;
+}
+.stock__description-text {
+    display: inline-block;
+    width: 161px;
+}
+
+
+
