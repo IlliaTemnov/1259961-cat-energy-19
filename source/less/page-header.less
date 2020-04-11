@@ -6,18 +6,36 @@
   z-index: 1;
   position: relative;
 }
-.logo-image {
+.logo-mobile{
   margin-bottom: 10px;
   margin-left: 20px;
   margin-top: 10px;
+
+  & :hover,:focus {
+    opacity: 0.8;
+  }
+  & :active {
+    opacity: 0.6;
+  }
 }
+
+.logo-tablet {
+  display: none;
+}
+
+.logo-desktop {
+  display: none;
+}
+
 .menu {
   border-top: 1px solid @var-lightgrey;
 }
+
 /* скрываю чекбокс */
 #menu__toggle {
   display: none;
 }
+
 /* стилизую кнопку */
 .menu__btn {
   display: flex; 
@@ -30,6 +48,7 @@
   cursor: pointer;
   z-index: 1;
 }
+
   /*"гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
@@ -40,14 +59,17 @@
   height: 2px;
   background-color: @var-lightblack;
 }
+
 .menu__btn > span::before {
   content: '';
   top: -7px;
 }
+
 .menu__btn > span::after {
   content: '';
   top: 7px;
 }
+
   /* контейнер меню */
 .menu__box {
   display: none;
@@ -56,7 +78,7 @@
   top: 85px;
   left: -20px;
   width: 320px;
-  min-height: 196px;
+  // min-height: 196px;
   margin: 0;
   padding: 0;
   background-color: @var-white;
@@ -69,7 +91,7 @@
   padding: 18px 24px;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -78,9 +100,10 @@
   background-color: @var-white;
   user-select: none; 
 }
+
 .menu__item-link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   color: @var-black;
 }
   /* подчеркивание активного элемента */
@@ -88,31 +111,164 @@
   display: inline-block;
   text-decoration: none;
   color: @var-black;
+  font-weight: 400;
   border-bottom: 2px solid @var-green;
 }
+
 .menu__item:hover > .menu__item-link,   .menu__item:focus > .menu__item-link{
   color: @var-hover-black;
 }
+
 .menu__item:active > .menu__item-link{
   color: @var-active-black;
 }
+
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
   display: block;
 }
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
   transition-duration: .25s;
 }
 
+@media(min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 768px;
+    height: 85px;
+    padding: 24px 0px 0px 29px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-tablet {
+    display: block;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .menu {
+    border-top: none;
+  }
+
+  .menu__btn {
+    display: none;
+  }
+
+  .menu__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    min-width: 500px;
+    padding-top: 15px;
+    z-index: 0;
+    flex-grow: 1;
+  }
+
+  .menu__item {
+    padding: 0;
+    border-bottom: none;
+    height: inherit;
+    padding-bottom: 7px;
+  }
+
+  .menu__item-link, .menu__item-link--active {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 7px;
+  }
+
+  .button--large {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0px 17px 0px;
+    width: 245px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .page-header {
+    min-width: 1440px;
+    height: 85px;
+    padding: 53px 86px 0px 109px;
+    margin-bottom: 70px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-tablet {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  .menu__box {
+    background-color:  transparent;
+  }
+
+  .menu__item {
+    background-color:  transparent;
+  }
+
+  .menu__item-link {
+    color: @var-black;
+    font-size: 20px;
+
+    &--active{
+      color: @var-black;
+      font-size: 20px;
+    }
+  }
+
+  .menu__item-link-white {
+    color: @var-white;
+    font-size: 20px;
+
+    &--active {
+      color: @var-white;
+      font-size: 20px;
+    }
+  }
+
+  .menu__item-link--active{
+    border-bottom: 2px solid @var-black;
+  }
+
+  .menu__item-link-white--active{
+    border-bottom: 2px solid @var-white
+  }
+
+  .button--large {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0px 17px 0px;
+    width: 245px;
+  }
+}

@@ -4,15 +4,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.contacts--grey {
+    
+    &--grey {
     background-color: @var-lightgrey;
     min-width: 320px;
     height: 114px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    }
 }
+
 .contacts__title {
     width: 125px;
     line-height: 20px;
@@ -22,14 +24,80 @@
     font-weight: 400;
     text-transform: uppercase;
 }
+
 .contacts__title p{
     margin: 0;
     padding: 0;
 }
+
 .contacts__adress {
     font-family: Arial, Helvetica, sans-serif;
     width: 135px;
     color: @var-grey;
     font-size: 14px;
     line-height: 20px;
+}
+
+@media(min-width: @tablet-width) {
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        min-width: 768px;
+        min-height: 201px;
+        padding: 0px 70px;
+        margin-top: 75px;
+        background-color: @var-lightgrey;
+
+         &--grey {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            min-width: 768px;
+            min-height: 201px;
+            padding: 0px 70px;
+            margin-top: 75px;
+            background-color: @var-lightgrey;
+        }
+    }
+
+    .contacts__title {
+        font-size: 20px;
+        line-height: 25px;
+        width: 155px;
+    }
+    
+    .contacts__adress span{
+        line-height: 40px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .contacts {
+        position: absolute;
+        left: 110px;
+        top: 95px;
+        min-width: 570px;
+        min-height: 201px;
+        padding: 66px 90px 60px 75px;
+        margin: 0;
+        background-color: @var-white;
+        z-index: 2;
+
+        &--grey   {    
+            position: absolute;
+            left: 110px;
+            top: 95px;
+            min-width: 570px;
+            min-height: 201px;
+            padding: 66px 90px 60px 75px;
+            margin: 0;
+            background-color: @var-white;
+            z-index: 2;
+        } 
+    }
+    
+    .contacts__adress span{
+        line-height: 40px;
+    }
 }

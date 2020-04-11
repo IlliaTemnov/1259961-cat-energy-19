@@ -8,7 +8,8 @@
     background-repeat: no-repeat;
     text-align: center;
     z-index: 0;
- }
+  }
+
 .promo__wrapper {
     display: flex;
     flex-direction: column;
@@ -20,24 +21,108 @@
     background-repeat: no-repeat;
     background-position: center bottom 45px;
     padding: 25px 20px 0;
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: @var-white;
+    margin: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  .promo__description {
+    font-size: 14px;
+    line-height: 14px;
+    color: @var-white;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .promo__button {
+      margin-top: auto;
+      padding: 11px 73px;
+  }
+
+@media(min-width: @tablet-width) {
+  .promo {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-image: url(../img/index-can-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-position: bottom;
+    width: 768px;
+    min-height: 870px;
+    padding: 60px 60px 530px 90px;
+  }
+
+  .promo__wrapper {
+    justify-content: space-between;
+    min-width: 415px;
+    min-height: 280px;
+    background-image:none;
+    padding: 0;
+  }
+
+  .promo__title {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 60px;
+    color: @var-black;
+    width: 415px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .promo__description {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: @var-black;
+    text-align: left;
+  }
+
+  .promo__button {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 29px 17px 29px;
+  }
 }
-.promo__title {
-  font-size: 36px;
-   line-height: 36px;
-   font-weight: 400;
-   color: @var-white;
-   margin: 0;
-   margin-bottom: 20px;
-   z-index: 1;
-}
-.promo__description {
-  font-size: 14px;
-  line-height: 14px;
-  color: @var-white;
-  text-transform: uppercase;
-  z-index: 1;
-}
-.promo__button {
-    margin-top: auto;
-    padding: 11px 73px;
+
+@media(min-width: @desktop-width) {
+  .promo {
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    width: 1440px;
+    min-height: 696px;
+    padding: 136px 328px 64px 193px;
+    margin-top: -155px
+  }
+
+ .promo__wrapper {
+    justify-content: flex-start;
+    min-width: 919px;
+    min-height: 499px;
+    background-image:none;
+    padding: 0;
+    padding-top: 84px;
+    background-image: url(../img/index-can-desktop@1x.png);
+    background-size: 60%;
+    background-position: right;
+  }
+
+  .promo__title {
+    margin-bottom: 33px;
+  }
+
+  .promo__description {
+    margin-bottom: 53px;
+  }
 }

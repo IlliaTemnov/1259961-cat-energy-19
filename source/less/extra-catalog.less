@@ -1,4 +1,5 @@
 .extra-catalog__title {
+
     display: inline-block;
     box-sizing: border-box;
     position: relative;
@@ -10,17 +11,19 @@
     font-weight: 400;
     margin: 0;
     color: @var-black;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 53px;
+        height: 3px;
+        background-color: @var-green;
+        right: 0px;
+        top: 50%+2px;
+    }
 }
-.extra-catalog__title::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 53px;
-    height: 3px;
-    background-color: @var-green;
-    right: 0px;
-    top: 50%+2px;
-}
+
 .extra-catalog__list {
     display: flex;
     flex-direction: column;
@@ -29,6 +32,7 @@
     margin: 0;
     padding: 0;
 }
+
 .extra-catalog__item {
     display: flex;
     flex-direction: column;
@@ -37,60 +41,68 @@
     min-height: 128px;
     box-sizing: border-box;
     padding: 15px 20px;
+    
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 280px;
+        height: 1px;
+        background-color: @var-frame-grey;
+        top: 0;
+        left: 20;
+    }
 }
-.extra-catalog__item::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    background-color: @var-lightgrey;
-    top: 0;
-    left: 20;
-}
+
 .extra-catalog__item-title {
     display: inline-block;
     text-transform: uppercase;
     margin-top: 0;
     font-size: 16px;
 }
+
 .extra-catalog__item-wraper {
     display: flex;
     min-width: 280px;
     justify-content: space-between;
 }
+
 .extra-catalog__item-description {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: @var-grey;
     margin-bottom: 14px;
 }
+
 .extra-catalog__list-item-button {
     text-align: center;
 }
+
 .stock {
     display: block;
     height: 360px;
     box-sizing: border-box;
     position: relative;
     padding: 39px 20px 32px 20px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 280px;
+        height: 1px;
+        background-color: @var-lightgrey;
+        top: 0;
+        left: 20;
+    }
 }
-.stock::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    background-color: @var-lightgrey;
-    top: 0;
-    left: 20;
-}
+
 .stock__description {
     display: block;
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    min-width: 280px;
+    width: 280px;
     min-height: 289px;
     margin: 0;
     background-image: url(../img/gift-photo-mobile@1x.jpg);
@@ -100,22 +112,235 @@
     font-size: 16px;
     line-height: 20px;
     padding: 190px 60px 40px 60px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 56px;
+        height: 61px;
+        background-image: url('../img/gift.png');
+        background-repeat: no-repeat;
+        bottom: 55%;
+        left: 40%;
+    }
 }
-.stock__description::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 56px;
-    height: 61px;
-    background-image: url('../img/gift.png');
-    background-repeat: no-repeat;
-    bottom: 55%;
-    left: 40%;
-}
+
 .stock__description-text {
     display: inline-block;
     width: 161px;
 }
 
+@media(min-width: @tablet-width) {
+    
+    .extra-catalog {
+        width: 767px;
+        padding: 0px 30px;
+        margin-top: -100px;
+        box-sizing: border-box;
+    } 
+
+    .extra-catalog__title {
+        font-size: 36px;
+        line-height: 36px;
+        padding-left: 30px;
+        margin-bottom: 75px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: @var-green;
+            width: 30px;
+            height: 3px;
+            left: -30px;
+            top: 50%+2px;  
+        }
+
+        &::before {
+            width: 300px;
+            height: 3px;
+            left: 476px;
+            top: 50%+2px;
+        }
+    }
+
+    .extra-catalog__list {
+        margin-bottom: 70px;
+    }
+
+    .extra-catalog__item {
+
+        padding: 28px 37px;
+        border: 1px solid @var-frame-grey;
+
+        &::before  {
+            background-color: transparent;
+        }
+    }
+    
+    .extra-catalog__item-title-wraper {
+        display: flex;
+        width: 633px;
+        justify-content: space-between;
+    }
+
+    .extra-catalog__item-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .stock {
+       width: 708px;
+       height: 200px;
+       padding: 0;
+    }
+
+    .stock__description {
+        width: 708px;
+        min-height: 200px;
+        background-image: url(../img/gift-photo-tablet@1x.jpg);
+        padding: 75px 125px 65px 425px;
+        margin-bottom: 75px;
+    
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 56px;
+            height: 61px;
+            background-image: url('../img/gift.png');
+            background-repeat: no-repeat;
+            bottom: 35%;
+            left: 15%;
+        }
+    }
+    .stock__description-text {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        min-height: 16px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+    
+    .extra-catalog {
+        min-height: 470px;
+        width: 1440px;
+        margin-top: -85px;
+        padding: 0;
+    }
+
+    .extra-catalog__title {
+        font-size: 36px;
+        width: 540px;
+        padding-left: 110px;
+        padding-bottom: 0;
+        margin: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: @var-green;
+            width: 80px;
+            height: 3px;
+            left: 0px;
+            top: 50%+2px;  
+        }
+
+        &::before {
+            width: 950px;
+            height: 3px;
+            left: 500px;
+            top: 50%+2px;
+        }
+    }
+
+    .extra-catalog__wraper {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 70px 110px;
+        width: 1440px;
+        min-height: 0;
+    }
+
+    .extra-catalog__list {
+        width: 895px;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .extra-catalog__item {
+        display: flex;
+        flex-direction: row;
+        min-height: 71px;
+        width: 895px;
+        align-items: center;
+        padding: 0px;
+        border: none;
+        border-top: 1px solid @var-frame-darkgrey;
+
+        &::before  {
+            background-color: transparent;
+        }
+    }
+
+    .extra-catalog__item:last-child {
+        border-bottom: 1px solid @var-frame-darkgrey;
+    }
+
+    .extra-catalog__item-title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        width: 170px;
+        color: @var-black;
+    }
+
+    .extra-catalog__item-description {
+        margin-bottom: 0;
+    }
+
+    .extra-catalog__list-item-button {
+        width: 223px
+    }
+
+    .extra-catalog__item-wraper {
+        min-width: 285px;
+        align-self:  center;
+        margin-right: 25px;
+    }
+
+    .stock {
+        padding: 0;
+        height: 289px;
+        width: 245px;
+    }
+
+    .stock__description {
+        width: 245px;
+        min-height: 289px;
+        background-image: url(../img/gift-photo-desktop@1x.jpg);
+        background-repeat: no-repeat;
+        padding: 190px 43px 43px;
+        margin: 0;
+
+        &::before {
+            bottom: 55%;
+            left: 40%;
+        }
+    }
+
+    .stock__description-text {
+        display: inline-block;
+        width: 161px;
+        text-align: center;
+    }
+}
 
 

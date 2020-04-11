@@ -4,6 +4,7 @@
     min-height: 427px;
     box-sizing: border-box;
 }
+
 .features__list {
     display: flex;
     flex-direction: column;
@@ -13,15 +14,18 @@
     margin: 0;
     padding: 0;
 }
+
 .features__list-item {
     display: flex;
     justify-content: space-between;
     min-height: 60px;
 }
+
 .features__title {
     margin: 0px;
     margin-bottom: 35px;
 }
+
 .features__list-item-description {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -29,37 +33,160 @@
     color: @var-grey;
      margin: 0;
 }
+
 .features__list-item-square {
     display: block;
     width: 60px;
     height: 60px;
     background-color: @var-green;
     position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+    }
 }
-.features__list-item-square::before {
-    content: '';
-    display: block;
-    position: absolute;
-}
+
 .features__list-item-square--leaf {
     background-image: url(../img/advantage-leaf@1x.png);
     background-repeat: no-repeat;
     background-position: 5px;
 }
+
 .features__list-item-square--powder {
     background-image: url(../img/advantage-powder@1x.png);
     background-repeat: no-repeat;
     background-position: 5px;
 }
+
 .features__list-item-square--dining {
     background-image: url(../img/advantage-dining@1x.png);
     background-repeat: no-repeat;
     background-position: 5px;
 }
+
 .features__list-item-square--clock {
     background-image: url(../img/advantage-clock@1x.png);
     background-repeat: no-repeat;
     background-position: 5px;
+}
+
+@media(min-width: @tablet-width) {
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        min-width: 768px;
+        padding: 50px 30px 50px 30px;
+        height: 780px;
+        box-sizing: border-box;
+    }
+
+    .features__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 605px;
+    }
+
+    .features__title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 60px;
+    }
+
+    .features__list-item {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 354px;
+        min-height: 228px;
+    }
+
+    .features__list-item-description {
+        font-size: 16px;
+        line-height: 24px;
+        width: 245px;
+        margin-top: 35px;
+        z-index: 1;
+    }
+
+    .features__list-item-square {
+        width: 80px;
+        height: 80px;
+    }
+
+    .features__list-item-square--leaf {
+        background-position: 16px;
+
+        &:before {
+            content: '1';
+            font-family: inherit;
+            font-size: 281px;
+            color: @var-lightgrey;
+            z-index: 0;
+            top: 91px;
+            left: 115px;
+        }
+    }
+
+    .features__list-item-square--powder {
+        background-position: 16px;
+
+         &:before {
+            content: '2';
+            font-family: inherit;
+            font-size: 281px;
+            color: @var-lightgrey;
+            z-index: 0;
+            top: 91px;
+            left: 115px;
+        }
+    }
+    
+    .features__list-item-square--dining {
+        background-position: 16px;
+        
+        &:before {
+            content: '3';
+            font-family: inherit;
+            font-size: 281px;
+            color: @var-lightgrey;
+            z-index: 0;
+            top: 91px;
+            left: 115px;
+        }
+    }
+    
+    .features__list-item-square--clock {
+        background-position: 16px;
+
+        &:before {
+            content: '4';
+            font-family: inherit;
+            font-size: 281px;
+            color: @var-lightgrey;
+            z-index: 0;
+            top: 91px;
+            left: 115px;
+        }
+    }
+}
+
+@media(min-width: @desktop-width) {
+    .features {
+        min-width: 1440px;
+        padding: 0px 112px;
+        height: 400px;
+    }
+
+    .features__list {
+        min-height: 435px;
+    }
+
+    .features__list-item {
+        width: 240px;
+        height: 240px;
+    }
 }
 
 
