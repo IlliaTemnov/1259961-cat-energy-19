@@ -12,6 +12,7 @@
 @import 'map.less';
 @import 'extra-catalog.less';
 @import 'form.less';
+@import 'normalize.less';
 
 @font-face {
 font-family: 'Oswald';
@@ -48,12 +49,26 @@ font-display: swap;
 @var-active-black: rgba(17, 17, 17, 0.3);
 @var-lightblack: #222222;
 @var-invalid: #ff8282;
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
+.itemsmall {
+    min-width: 161px;
+    min-height: 172px;
+    margin-top: -80px;
+}
+
+.itembig {
+    min-width: 195px;
+    min-height: 208px;
+    margin-top: -115px;
+}
 
 body {
     font-family: 'Oswald', 'Arial', sans-serif;
-    width: 320px;
     font-size: 14px;
     line-height: 18px;
+    width: 100%;
     color: @var-grey;
     background-color: @var-white;
     position: relative;
@@ -63,4 +78,3 @@ img {
     max-width: 100%;
     height: auto;
 }
-

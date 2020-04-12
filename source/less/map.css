@@ -1,0 +1,22 @@
+.map {
+  position: relative;
+}
+.map__treasure {
+  display: block;
+  min-width: 320px;
+  min-height: 400px;
+  background-image: url('../img/bg-map-mobile@1x.png');
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.map__treasure-pin {
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-image: url('../img/map-pin.png');
+  background-size: 65px 55px;
+  bottom: 170px;
+  right: 140px;
+}

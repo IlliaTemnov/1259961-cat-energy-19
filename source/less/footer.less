@@ -1,9 +1,15 @@
 .page-footer {
-    min-height: 236px;
     background-color: @var-lightgrey;
+    width: 100%;
+}
+
+.page-footer__container {
+    min-height: 236px;
+    box-sizing: border-box;
     position: relative;
 }
-.logo--footer{
+
+.logo--footer {
     display: block;
     min-height: 94px;
     text-align: center;
@@ -11,26 +17,7 @@
     padding: 36px 96px 30px;
     position: relative;
 }
-.social::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 280px;
-    height: 1px;
-    background-color:@var-frame-grey;
-    top: 0;
-    left: 20px;
-}
-.social::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 280px;
-    height: 1px;
-    background-color:@var-frame-grey;
-    bottom: 0;
-    left: 20px;
-}
+
 .social {
     display: flex;
     list-style: none;
@@ -38,12 +25,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0px 20px 0px 20px;
     padding: 20px 102px 20px 93px;
     min-height: 62px;
     list-style: none; 
     position: relative;
+    border-top: 1px solid @var-frame-grey;
+    border-bottom: 1px solid @var-frame-grey;
 }
+
 .copyright {
     display: flex;
     justify-content: space-between;
@@ -57,4 +47,47 @@
     font-size: 16px;
     color: @var-grey;
     text-decoration: none;
+}
+
+@media(min-width: @tablet-width) {
+    
+    .page-footer__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 768px;
+        min-height: 150px; 
+    }
+
+    .logo--footer {
+        padding-left: 61px;
+    }
+
+    .social {
+        padding: 20px 80px 20px 80px;
+        border: none;
+    }
+
+    .social__item-link {
+        margin-right: 30px;
+    }
+
+    .copyright {
+        min-width: 207px;
+        padding-right: 30px;
+    }
+
+    .copyright__name {
+        margin-right: 15px;
+    }
+}
+
+@media(min-width: @desktop-width) {
+
+    .page-footer__container {
+        padding: 0px 40px;
+        max-width: 1440px;
+        min-height: 150px;
+        margin: 0 auto;
+    }
 }
