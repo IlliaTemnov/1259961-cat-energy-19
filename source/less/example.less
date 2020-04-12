@@ -1,5 +1,9 @@
 .example {
     background-color: @var-lightgrey;
+    width: 100%;
+}
+
+.example-container {
     min-height: 705px;
     box-sizing: border-box;
     padding: 33px 22px;
@@ -170,7 +174,7 @@
 
 @media(min-width: @tablet-width) {
 
-    .example {
+    .example-container {
         display: flex;
         flex-direction: column;
         background-color: @var-white;
@@ -319,13 +323,18 @@
 @media(min-width: @desktop-width) {
     
     .example {
+        background: linear-gradient(to top, @var-lightgrey 75%, white 50%);
+    }
+
+    .example-container {
         display: flex;
         flex-direction: row;
         min-height: 632px;
-        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0 auto;
         justify-content: space-around;
-        padding-left: 80px;
-        
+        background-color: transparent;
+        padding-left: 50px;
     }
 
     .example-wrap {
@@ -392,8 +401,8 @@
         line-height: 14px;
         bottom: -10px;
         left: 15%;
-        background-color: #eaeaea;
-        border: 5px solid #eaeaea;
+        background-color: @var-lightgrey;
+        border: 5px solid @var-lightgrey;
 
         &--right {
             left: 12%;

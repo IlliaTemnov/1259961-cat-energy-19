@@ -8,7 +8,7 @@
     box-sizing: border-box;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -58,11 +58,11 @@
     font-size: 16px;
     line-height: 20px;
     max-width: 75px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .list-item__button {
-    width: 258px;
+    width: 100%;
     text-align: center;
 }
 
@@ -71,41 +71,35 @@
     min-width: 140px;
     min-height: 124px;
     background-position: center;
-}
-
-.list-item__image--chickensmall {
-    background-image: url(../img/chicken-small-mobile@1x.jpg);
     background-repeat: no-repeat;
-}
 
-.list-item__image--chickenbig {
-    background-image: url(../img/chicken-big-mobile@1x.jpg);
-    background-repeat: no-repeat;
-}
+    &--chickensmall {
+        background-image: url(../img/chicken-small-mobile@1x.jpg);
+    }
 
-.list-item__image--fishsmall {
-    background-image: url(../img/fish-small-mobile@1x.jpg);
-    background-repeat: no-repeat;
-}
+    &--chickenbig {
+        background-image: url(../img/chicken-big-mobile@1x.jpg);
+    }
 
-.list-item__image--fishbig {
-    background-image: url(../img/fish-big-mobile@1x.jpg);
-    background-repeat: no-repeat;
-}
+    &--fishsmall {
+        background-image: url(../img/fish-small-mobile@1x.jpg);
+    }
 
-.list-item__image--buckweatsmall {
-    background-image: url(../img/buckwheat-small-mobile@1x.jpg);
-    background-repeat: no-repeat;
-}
+    &--fishbig {
+        background-image: url(../img/fish-big-mobile@1x.jpg);
+    }
 
-.list-item__image--buckweatbig{
-    background-image: url(../img/buckwheat-big-mobile@1x.jpg);
-    background-repeat: no-repeat;
-}
+    &--buckweatsmall {
+        background-image: url(../img/buckwheat-small-mobile@1x.jpg);
+    }
 
-.list-item__image--ricesmall{
-    background-image: url(../img/rice-small-mobile@1x.jpg);
-    background-repeat: no-repeat;
+    &--buckweatbig{
+        background-image: url(../img/buckwheat-big-mobile@1x.jpg);
+    }
+
+    &--ricesmall{
+        background-image: url(../img/rice-small-mobile@1x.jpg);
+    }
 }
 
 .main-catalog__more {
@@ -130,18 +124,18 @@
     margin: 0;
     text-transform: uppercase;
     position: relative;
-}
 
-.main-catalog__more-title::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 31px;
-    height: 31px;
-    background-image: url(../img/icon-plus-mobile.svg);
-    opacity: 0.2;
-    top: -55px;
-    left: 50%-5px;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 31px;
+        height: 31px;
+        background-image: url(../img/icon-plus-mobile.svg);
+        opacity: 0.2;
+        top: -55px;
+        left: 50%-5px;
+    }
 }
 
 .main-catalog__more-description {
@@ -153,7 +147,7 @@
 }
 
 .main-catalog__more-button {
-    width: 200px;
+    width: 100%;
     text-align: center;
 }
 
@@ -247,6 +241,16 @@
         font-size: 20px;
         line-height: 20px;
         width: 135px;
+
+        &::before {
+            content: '';
+            width: 61px;
+            height: 61px;
+            background-image: url(../img/icon-plus.svg);
+            opacity: 0.2;
+            top: -133px;
+            left: 27%;
+        }
     }
 
     .main-catalog__more-description {
@@ -256,77 +260,54 @@
         text-align: center;
     }
 
-    .main-catalog__more-title::before {
-        content: '';
-        width: 61px;
-        height: 61px;
-        background-image: url(../img/icon-plus.svg);
-        opacity: 0.2;
-        top: -133px;
-        left: 27%;
-    }
+    .list-item__image {
+        background-repeat: no-repeat;
 
-    .list-item__image--chickensmall {
-        background-image: url(../img/chicken-small-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 161px;
-        min-height: 172px;
-        margin-top: -80px;
-    }
+        &--chickensmall {
+            background-image: url(../img/chicken-small-tablet@1x.png);
+            .itemsmall;
+        }
 
-    .list-item__image--chickenbig {
-        background-image: url(../img/chicken-big-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 195px;
-        min-height: 208px;
-        margin-top: -115px;
-    }
+        &--chickenbig {
+            background-image: url(../img/chicken-big-tablet@1x.png);
+            .itembig;
+        }
 
-    .list-item__image--fishsmall {
-        background-image: url(../img/fish-small-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 161px;
-        min-height: 172px;
-        margin-top: -80px;
-    }
-    
-    .list-item__image--fishbig {
-        background-image: url(../img/fish-big-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 195px;
-        min-height: 208px;
-        margin-top: -115px;
-    }
-    
-    .list-item__image--buckweatsmall {
-        background-image: url(../img/buckwheat-small-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 161px;
-        min-height: 172px;
-        margin-top: -80px;
-    }
-    
-    .list-item__image--buckweatbig{
-        background-image: url(../img/buckwheat-big-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 195px;
-        min-height: 208px;
-        margin-top: -115px;
-    }
-    
-    .list-item__image--ricesmall{
-        background-image: url(../img/rice-small-tablet@1x.png);
-        background-repeat: no-repeat;
-        min-width: 161px;
-        min-height: 172px;
-        margin-top: -80px;
+        &--fishsmall {
+            background-image: url(../img/fish-small-tablet@1x.png);
+            .itemsmall;
+        }
+        
+        &--fishbig {
+            background-image: url(../img/fish-big-tablet@1x.png);
+            .itembig;
+        }
+        
+        &--buckweatsmall {
+            background-image: url(../img/buckwheat-small-tablet@1x.png);
+            .itemsmall;
+        }
+        
+        &--buckweatbig{
+            background-image: url(../img/buckwheat-big-tablet@1x.png);
+            .itembig;
+        }
+        
+        &--ricesmall{
+            background-image: url(../img/rice-small-tablet@1x.png);
+            .itemsmall;
+        }
     }
 }
 
 @media(min-width: @desktop-width) {
 
+    .main-catalog {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .main-catalog__list {
-        width: 1440px;
+        max-width: 1440px;
         justify-content: space-between;
         padding: 0px 110px;
     }

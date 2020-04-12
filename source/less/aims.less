@@ -5,7 +5,7 @@
     min-height: 595px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0;
+    padding: 0px 20px;
     margin: 0;
 }
 
@@ -106,7 +106,6 @@
     }
 
     .aims__item {
-        min-width: 708px;
         min-height: 372px;
         padding: 77px 285px 60px 50px;
     }
@@ -164,16 +163,17 @@
 @media(min-width: @desktop-width) {
     .aims {
         flex-direction: row;
-        min-height: 372px;
-        min-width: 1440px;
         justify-content: space-between;
+        min-height: 372px;
+        max-width: 1440px;
+        margin: 0 auto;
         padding: 80px 110px;
     }
 
     .aims__item {
-        min-width: 570px;
         min-height: 372px;
         padding: 81px 56px 60px 52px;
+        max-width: 570px;
     }
 
     .aims__item-title {
