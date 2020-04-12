@@ -6,27 +6,18 @@
     display: block;
     min-width: 320px;
     min-height: 400px;
-    background-image: url('../img/bg-map-mobile@1x.png');
+    background-image: url('../img/map-mobile.png');
     background-repeat: no-repeat;
+    background-size: 100% auto;
     position: relative;
     z-index: 1;
-}
-.map__treasure-pin {
-    display: block;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-image: url('../img/map-pin.png');
-    background-size: 65px 55px;
-    bottom: 170px;
-    right: 140px;
 }
 
 @media(min-width: @tablet-width) {
     .map__treasure {
         min-width: 767px;
         min-height: 400px;
-        background-image: url('../img/bg-map-tablet@1x.png');
+        background-image: url('../img/map-tablet.png');
     }
 
     .map__treasure-pin {
@@ -43,6 +34,6 @@
     .map__treasure {
         min-width: 1440px;
         min-height: 400px;
-        background-image: url('../img/bg-map-desktop@1x.png');
+        background-image: url('../img/map-desktop.png');
     }
 }

@@ -2,7 +2,7 @@
     background-color: @var-lightgrey;
     min-height: 705px;
     box-sizing: border-box;
-    padding: 33px 20px;
+    padding: 33px 22px;
 }
 
 .example__title {
@@ -15,7 +15,7 @@
 .example__description {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    max-width: 266px;
+    min-width: 266px;
 }
 
 .benefit-list {
@@ -23,7 +23,7 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 0;
+    width: 290px;
 }
 
 .benefit-list__item {
@@ -186,6 +186,12 @@
         box-sizing: border-box;
         border-top: 1px solid @var-frame-grey;
         padding: 50px 30px 70px 30px;
+
+        &--small {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     .example__title {
@@ -236,11 +242,6 @@
         width: 175px;
         color: @var-black;
         margin: 0;
-    }
-    .example-wrap--small {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .example__slider-controls-scale {
@@ -366,7 +367,8 @@
 
     .example__slider-background {
         width: 1440px;
-        left: -663px;
+        left: -660px;
+        bottom: 0;
         z-index: 0;
     }
     .example__slider {
