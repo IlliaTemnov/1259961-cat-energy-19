@@ -1,6 +1,6 @@
 .contacts {
     min-width: 320px;
-    height: 114px;
+    min-height: 118px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,7 +8,7 @@
     &--grey {
     background-color: @var-lightgrey;
     min-width: 320px;
-    height: 114px;
+    min-height: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,7 +22,9 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    margin-left: 14px;
     text-transform: uppercase;
+    margin-top: 15px;
 }
 
 .contacts__title p{
@@ -36,6 +38,9 @@
     color: @var-grey;
     font-size: 14px;
     line-height: 20px;
+    margin-right: 16px;
+    margin-top: 15px;
+
 }
 
 @media(min-width: @tablet-width) {
@@ -45,8 +50,8 @@
         box-sizing: border-box;
         min-width: 768px;
         min-height: 201px;
-        padding: 0px 70px;
-        margin-top: 60px;
+        padding: 0px 62px;
+        margin-top: 69px;
         background-color: @var-white;
 
          &--grey {
@@ -56,19 +61,33 @@
             min-width: 768px;
             min-height: 201px;
             padding: 0px 70px;
-            margin-top: 75px;
+            margin-top: 52px;
             background-color: @var-lightgrey;
         }
+    }
+
+    .contacts__adress {
+        text-align: right;
+        width: 170px;
+        font-size: 16px;
+        margin-right: 3px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        min-height: 95px;
     }
 
     .contacts__title {
         font-size: 20px;
         line-height: 25px;
         width: 155px;
+        margin-left: 0px;
+        text-transform: uppercase;
+        margin-top: 23px;
     }
     
     .contacts__adress span{
-        line-height: 40px;
+        margin-top: 20px;
+        line-height:60px;
     }
 }
 
@@ -77,9 +96,9 @@
         position: absolute;
         left: 8%;
         top: 25%;
-        min-width: 570px;
-        min-height: 201px;
-        padding: 66px 90px 60px 75px;
+        min-width: 564px;
+        height: 200px;
+        padding: 65px 62px 76px 62px;
         margin: 0;
         background-color: @var-white;
         z-index: 2;
@@ -90,14 +109,20 @@
             top: 95px;
             min-width: 570px;
             min-height: 201px;
-            padding: 66px 90px 60px 75px;
+            padding: 8px 90px 8px 75px;
             margin: 0;
             background-color: @var-white;
             z-index: 2;
         } 
     }
+
+    .contacts__adress {
+        text-align: left;
+        line-height: 20px;
+        margin-right: -15px;
+    }
     
     .contacts__adress span{
-        line-height: 40px;
+        line-height: 58px;
     }
 }

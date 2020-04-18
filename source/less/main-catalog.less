@@ -16,7 +16,7 @@
     display: inline-block;
     box-sizing: border-box;
     line-height: 37px;
-    padding: 30px 20px 36px;
+    padding: 26px 20px 40px;
     margin: 0;
 }
 
@@ -25,8 +25,8 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     align-items: center;
-    min-height: 210px;
-    padding: 25px 20px;
+    min-height: 209px;
+    padding: 2px 23px 25px 20px;
     border-top: 1px solid @var-frame-grey;
 }
 
@@ -34,21 +34,23 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    min-height: 100px;
 }
 
 .list-item__description {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 12px;
     color: @var-grey;
     min-width: 132px;
     text-align: left;
+    margin-left: -3px;
 }
 
 .list-item__description td:last-child{
     display: inline-block;
-    min-width: 82px;
+    min-width: 94px;
     text-align: right;
 }
 
@@ -58,7 +60,8 @@
     font-size: 16px;
     line-height: 20px;
     max-width: 75px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    margin-top: -2px;
 }
 
 .list-item__button {
@@ -68,38 +71,10 @@
 
 .list-item__image {
     display: block;
-    min-width: 140px;
-    min-height: 124px;
-    background-position: center;
+    width: 137px;
+    min-height: 119px;
+    background-position: center -22px;
     background-repeat: no-repeat;
-
-    &--chickensmall {
-        background-image: url(../img/chicken-small-mobile@1x.jpg);
-    }
-
-    &--chickenbig {
-        background-image: url(../img/chicken-big-mobile@1x.jpg);
-    }
-
-    &--fishsmall {
-        background-image: url(../img/fish-small-mobile@1x.jpg);
-    }
-
-    &--fishbig {
-        background-image: url(../img/fish-big-mobile@1x.jpg);
-    }
-
-    &--buckweatsmall {
-        background-image: url(../img/buckwheat-small-mobile@1x.jpg);
-    }
-
-    &--buckweatbig{
-        background-image: url(../img/buckwheat-big-mobile@1x.jpg);
-    }
-
-    &--ricesmall{
-        background-image: url(../img/rice-small-mobile@1x.jpg);
-    }
 }
 
 .main-catalog__more {
@@ -124,6 +99,7 @@
     margin: 0;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: -9px;
 
     &::before {
         content: '';
@@ -134,7 +110,7 @@
         background-image: url(../img/icon-plus-mobile.svg);
         opacity: 0.2;
         top: -55px;
-        left: 50%-5px;
+        left: 42%;
     }
 }
 
@@ -149,6 +125,7 @@
 .main-catalog__more-button {
     width: 100%;
     text-align: center;
+    letter-spacing: 0.6px;
 }
 
 @media(min-width: @tablet-width) {
@@ -163,9 +140,9 @@
         font-size: 60px;
         line-height: 60px;
         width: 480px;
-        margin-bottom: 100px;
+        margin-bottom: 122px;
         padding-left: 30px;
-        padding-top: 65px
+        padding-top: 55px;
     }
 
     .list-item {
@@ -177,7 +154,7 @@
         min-height: 431px;
         padding: 38px 38px;
         background-color: @var-lightgrey;
-        margin-bottom: 130px;
+        margin-bottom: 141px;
         border: transparent;
     }
 
@@ -185,10 +162,11 @@
         font-size: 20px;
         line-height: 20px;
         font-weight: 500px;
-        max-width: 128px;
+        max-width: 130px;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 19px;
+        margin-top: 6px;
     }
 
     .main-catalog__list-wrapper {
@@ -214,6 +192,7 @@
     .list-item__description td:nth-child(2n){
         text-align: right;
         width: 190px;
+        height: 22px;
     }
 
     .list-item__button {
@@ -223,7 +202,7 @@
 
     .main-catalog__more {
         padding: 38px;
-        padding-top: 190px;
+        padding-top: 163px;
         width: 324px;
         min-height: 431px;
         margin-bottom: 58px;
@@ -231,8 +210,8 @@
     }
 
     .main-catalog__more-button {
-        width: 165px;
         text-align: center;
+        font-size: 16px;
     }
 
     .main-catalog__more-title {
@@ -248,8 +227,8 @@
             height: 61px;
             background-image: url(../img/icon-plus.svg);
             opacity: 0.2;
-            top: -133px;
-            left: 27%;
+            top: -110px;
+            left: 28%;
         }
     }
 
@@ -258,6 +237,7 @@
         font-size: 16px;
         line-height: 16px;
         text-align: center;
+        margin-bottom: 55px;
     }
 
     .list-item__image {
@@ -266,36 +246,43 @@
         &--chickensmall {
             background-image: url(../img/chicken-small-tablet@1x.png);
             .itemsmall;
+            background-position: -82px 0px;
         }
 
         &--chickenbig {
             background-image: url(../img/chicken-big-tablet@1x.png);
             .itembig;
+            background-position: -66px -2px;
         }
 
         &--fishsmall {
             background-image: url(../img/fish-small-tablet@1x.png);
             .itemsmall;
+            background-position: -82px 0px;
         }
         
         &--fishbig {
             background-image: url(../img/fish-big-tablet@1x.png);
             .itembig;
+            background-position: -66px -2px;
         }
         
         &--buckweatsmall {
             background-image: url(../img/buckwheat-small-tablet@1x.png);
             .itemsmall;
+            background-position: -82px 0px;
         }
         
         &--buckweatbig{
             background-image: url(../img/buckwheat-big-tablet@1x.png);
             .itembig;
+            background-position: -66px -2px;
         }
         
         &--ricesmall{
             background-image: url(../img/rice-small-tablet@1x.png);
             .itemsmall;
+            background-position: -82px 0px;
         }
     }
 }
@@ -313,8 +300,9 @@
     }
 
     .main-catalog__title {
-        width: 556px;
-        padding-left: 106px;
+        width: 560px;
+        padding-left: 110px;
+        padding-top: 33px;
     }
 
     .list-item {
@@ -323,10 +311,6 @@
     }
 
     .list-item__button {
-        width: 150px;
-    }
-
-    .main-catalog__more-button {
         width: 150px;
     }
 
@@ -341,7 +325,7 @@
 
     .list-item__title {
         color: @var-black;
-        margin-bottom: 35px;
+        margin-bottom: 25px
     }
 
     .list-item__description td:nth-child(2n){
@@ -356,15 +340,30 @@
     }
 
     .main-catalog__more-description {
-        margin-bottom: 50px;
-    }
-
-    .main-catalog__more-button {
-        width: 90px;
+        margin-bottom: 45px;
+        line-height: 18px
     }
 
     .main-catalog__more-title::before {
         top: -110px;
+    }
+
+    .list-item__image {
+
+        &--chickenbig {
+            background-position: -76px -2px;
+            min-width: 180px;
+        }
+        
+        &--fishbig {
+            background-position: -76px -2px;
+            min-width: 170px;
+        }
+        
+        &--buckweatbig{
+            background-position: -76px -2px;
+            min-width: 170px;
+        }
     }
 }
 
