@@ -8,7 +8,7 @@
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    padding: 30px 19px;
+    padding: 28px 19px;
     min-height: 86px;
     min-width: 320px;
     font-size: 24px;
@@ -25,7 +25,7 @@
         height: 3px;
         background-color: @var-green;
         right: 0px;
-        top: 50%+2px;
+        top: 49%;
     }
 }
 
@@ -43,9 +43,9 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    min-height: 128px;
+    min-height: 129px;
     box-sizing: border-box;
-    padding: 15px 20px;
+    padding: 13px 23px 16px 20px;
     
     &::before {
         content: '';
@@ -64,6 +64,7 @@
     text-transform: uppercase;
     margin-top: 0;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .extra-catalog__item-wraper {
@@ -88,7 +89,7 @@
     height: 360px;
     box-sizing: border-box;
     position: relative;
-    padding: 39px 20px 32px 20px;
+    padding: 39px 23px 32px 20px;
 
     &::after {
         content: '';
@@ -117,7 +118,7 @@
     color: @var-white;
     font-size: 16px;
     line-height: 20px;
-    padding: 190px 60px 40px 60px;
+    padding: 188px 60px 40px 60px;
 
     &::before {
         content: '';
@@ -127,8 +128,8 @@
         height: 61px;
         background-image: url('../img/gift.png');
         background-repeat: no-repeat;
-        bottom: 55%;
-        left: 42%;
+        bottom: 56%;
+        left: 40%;
     }
 }
 
@@ -149,8 +150,8 @@
     .extra-catalog__title {
         font-size: 36px;
         line-height: 36px;
-        padding-left: 30px;
-        margin-bottom: 75px;
+        padding-left: 36px;
+        margin-bottom: 50px;
 
         &::after {
             content: '';
@@ -164,32 +165,51 @@
         }
 
         &::before {
-            width: 300px;
+            width: 327px;
             height: 3px;
-            left: 476px;
-            top: 50%+2px;
+            left: 410px;
+            top: 52%;
         }
     }
 
     .extra-catalog__list {
         margin-bottom: 70px;
     }
+    
+    .extra-catalog__item-description {
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 5px;
+    }
 
+    .item-quantity {
+        margin-right: 53px;
+    }
+    
     .extra-catalog__item {
 
-        padding: 28px 37px;
+        padding: 25px 37px 27px 37px;
+        min-height: 140px;
         border: 1px solid @var-frame-grey;
 
         &::before  {
             background-color: transparent;
         }
     }
+
+    .extra-catalog__item-wraper {
+        display: flex;
+        justify-content: flex-end;
+        min-width: 227px;
+    }
+
     
     .extra-catalog__item-title-wraper {
         display: flex;
         width: 633px;
         justify-content: space-between;
     }
+
 
     .extra-catalog__item-title {
         font-size: 20px;
@@ -206,7 +226,7 @@
         width: 708px;
         min-height: 200px;
         background-image: url(../img/gift-photo-tablet@1x.jpg);
-        padding: 75px 125px 65px 425px;
+        padding: 69px 125px 65px 423px;
         margin-bottom: 75px;
     
         &::before {
@@ -217,8 +237,8 @@
             height: 61px;
             background-image: url('../img/gift.png');
             background-repeat: no-repeat;
-            bottom: 35%;
-            left: 15%;
+            bottom: 39%;
+            left: 13%;
         }
     }
     .stock__description-text {
@@ -243,6 +263,7 @@
         width: 540px;
         padding-left: 110px;
         padding-bottom: 0;
+        padding-top: 25px;
         margin: 0;
 
         &::after {
@@ -250,17 +271,17 @@
             position: absolute;
             display: block;
             background-color: @var-green;
-            width: 80px;
+            width: 69px;
             height: 3px;
             left: 0px;
             top: 50%+2px;  
         }
 
         &::before {
-            width: 950px;
+            width: 957px;
             height: 3px;
-            left: 500px;
-            top: 50%+2px;
+            left: 483px;
+            top: 52%;
         }
     }
 
@@ -268,7 +289,8 @@
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        padding: 70px 110px;
+        padding: 54px 110px;
+        padding-bottom: 84px;
         width: 1440px;
         min-height: 0;
     }
@@ -320,6 +342,7 @@
         min-width: 285px;
         align-self:  center;
         margin-right: 25px;
+        justify-content: space-between;
     }
 
     .stock {
