@@ -10,6 +10,10 @@
     text-align: center;
     position: relative;
     z-index: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 
 .promo__wrapper {
@@ -66,8 +70,13 @@
     background-position: bottom;
     width: 768px;
     min-height: 870px;
-    padding: 55px 60px 529px 118px;
+    padding: 28px 63px 529px 97px;
     position: relative;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 93%;
+    }
   }  
 
   .promo__image {
@@ -78,6 +87,7 @@
     align-self: center;
     position: absolute;
     z-index: 0;
+    object-fit: cover;
   }
 
   .promo__wrapper {
@@ -95,7 +105,7 @@
     color: @var-black;
     width: 415px;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 41px;
     z-index: 0;
   }
 
@@ -105,6 +115,7 @@
     line-height: 20px;
     color: @var-black;
     text-align: left;
+    margin-bottom: 47px;
   }
 
   .promo__button {
@@ -122,10 +133,15 @@
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
-    width: 100%;
+    width: 1440px;
     min-height: 696px;
     padding: 136px 328px 64px 100px;
-    margin-top: -155px
+    margin: 0 auto;
+    margin-top: -155px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .promo__image {
