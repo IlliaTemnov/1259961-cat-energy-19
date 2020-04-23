@@ -39,24 +39,52 @@
         display: block;
         position: absolute;
     }
-}
 
-.aims__item-title--lessweight::before  {
-    background-image: url(../img/sittingpanter.png);
-    background-repeat: no-repeat;
-    height: 55px;
-    width: 60px;
-    left: -68px;
-    bottom: -29px;
-}
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+    }
 
-.aims__item-title--moreweight::before  {
-    background-image: url(../img/walkingpanter.png);
-    background-repeat: no-repeat;
-    height: 55px;
-    width: 80px;
-    left: -77px;
-    bottom: -30px;
+    &--lessweight::before  {
+        background-image: url(../img/icon-cat-slim.svg);
+        background-repeat: no-repeat;
+        height: 49px;
+        width: 35px;
+        left: -60px;
+        bottom: -23px;
+        z-index: 2;
+    }
+
+    &--lessweight::after  {
+        background-color: @var-green;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        left: -68px;
+        bottom: -27px;
+        z-index: 1;
+    }
+
+    &--moreweight::before  {
+        background-image: url(../img/icon-cat-pro.svg);
+        background-repeat: no-repeat;
+        height: 55px;
+        width: 68px;
+        left: -77px;
+        bottom: -40px;
+        z-index: 2;
+    }
+
+    &--moreweight::after  {
+        background-color: @var-green;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        left: -68px;
+        bottom: -25px;
+        z-index: 1;
+    }
 }
 
 .aims__item-description {
@@ -118,34 +146,39 @@
     }
 
     .aims__item-title {
+
         font-size: 36px;
         line-height: 37px;
         margin: 0;
         margin-left: 0px;
-        margin-bottom: -23px
-    }
-
-    .aims__item-title--lessweight::before  {
-        background-image: url(../img/sittingpanter.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 212px;
-        width: 200px;
-        left: 392px;
-        top: 3px;
-    }
-
-    .aims__item-title--moreweight {
-        margin-bottom: -25px;
-
-        &::before  {
-        background-image: url(../img/walkingpanter.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 212px;
-        width: 268px;
-        left: 360px;
-        top: 13px;
+        margin-bottom: -23px;
+    
+        &--lessweight::before {
+            height: 193px;
+            width: 175px;
+            left: 423px;
+            bottom: -160px;
+        }
+    
+        &--lessweight::after {
+            height: 200px;
+            width: 200px;
+            left: 393px;
+            bottom: -178px;
+        }
+    
+        &--moreweight::before {
+            height: 112px;
+            width: 271px;
+            left: 358px;
+            bottom: -133px;
+        }
+    
+        &--moreweight::after {
+            height: 200px;
+            width: 200px;
+            left: 395px;
+            bottom: -178px;
         }
     }
 
@@ -159,6 +192,7 @@
             width: 344px;
         }
     }
+    
     .aims__item-link {
         font-size: 20px;
         line-height: 20px;
@@ -195,22 +229,37 @@
     .aims__item-title {
         margin-left: 165px;
         margin-bottom: 48px;
+
+        &--lessweight::before {
+            height: 206px;
+            width: 70px;
+            left: -151px;
+            top: -35px;
+        }
+    
+        &--lessweight::after {
+            height: 100px;
+            width: 100px;
+            left: -166px;
+            bottom: -34px;
+        }
+    
+        &--moreweight::before {
+            height: 109px;
+            width: 136px;
+            left: -184px;
+            bottom: -64px;
+        }
+    
+        &--moreweight::after {
+            height: 100px;
+            width: 100px;
+            left: -163px;
+            bottom: -33px;
+        }
     }
 
     .aims__item-description {
         width: 463px;
-    }
-    .aims__item-title--lessweight::before  {
-        height: 212px;
-        width: 100px;
-        left: -163px;
-        top: -35px;
-    }
-
-    .aims__item-title--moreweight::before  {
-        height: 100px;
-        width: 134px;
-        left: -184px;
-        top: -30px;
     }
 }

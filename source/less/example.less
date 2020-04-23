@@ -96,6 +96,11 @@
     background-image: url('../img/before-mobile@1x.png');
     background-position: center;  
     background-repeat: no-repeat;
+    background-size: 311px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/before-mobile@2x.png");
+    }
 }
 
 .slider-list__item--after{
@@ -103,6 +108,10 @@
     background-image: url('../img/after-mobile@1x.png');
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/after-mobile@2x.png");
+    }
 }
 
 .example__slider-controls {
@@ -307,25 +316,31 @@
         margin-top: -7px;
         z-index: 1;
     }
+
     .slider-list__item {
         min-height: 517px;
         margin-bottom: 40px;
         width: 100%;
         padding: 0px 45px;
         box-sizing: border-box;
+        background-size: 676px auto;
+        z-index: 1;
 
         &--before {
             background-image: url('../img/before-tablet@1x.png');
-            z-index: 1;
-            background-position: 45px 14px;
-
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url("../img/before-tablet@2x.png");
+            }
         }
 
         &--after {
             background-image: url('../img/after-tablet@1x.png');
-            z-index: 1;   
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url("../img/after-tablet@2x.png");
+            }
         }
     }
+
     .example__slider-background {
         display: block;
         height: 462px;
@@ -337,6 +352,7 @@
         z-index: 0;
     }
 }
+
 @media(min-width: @desktop-width) {
     
     .example {
@@ -394,8 +410,24 @@
 
     .slider-list__item {
         width: 730px;
-        background-position: 26px -20px;
+        background-position: 26px -19px;;
         margin-bottom: 28px;
+        background-size: 687px auto;
+        z-index: 1;
+
+        &--before {
+            background-image: url('../img/before-desktop@1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url("../img/before-desktop@2x.png");
+            }
+        }
+
+        &--after {
+            background-image: url('../img/after-desktop@1x.png');
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url("../img/after-desktop@2x.png");
+            }
+        }
     }
 
     .example__slider-background {
