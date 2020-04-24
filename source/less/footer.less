@@ -9,13 +9,21 @@
     position: relative;
 }
 
-.logo--footer {
+.footer__logo {
     display: block;
     min-height: 94px;
     text-align: center;
     box-sizing: border-box;
     padding: 41px 96px 30px;
     position: relative;
+
+    &:hover,  &:focus {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
 }
 
 .social {
@@ -49,6 +57,31 @@
     color: @var-grey;
     text-decoration: none;
 }
+
+.social__item-link-image {
+    fill: @var-darkgrey;
+
+    &:hover, &:focus {
+        fill: @var-green; 
+    }
+
+    &:active {
+        fill: @var-green; 
+        opacity: 0.3;
+    }
+}
+
+    .copyright__logo {
+        &:hover, &:focus {
+            fill: @var-green; 
+        }
+    
+        &:active {
+            fill: @var-green; 
+            opacity: 0.3;
+        }
+    }
+
 
 @media(min-width: @tablet-width) {
     
@@ -87,6 +120,7 @@
         margin-right: 23px;
         margin-bottom: 10px;
     }
+
 }
 
 @media(min-width: @desktop-width) {
