@@ -7,10 +7,10 @@
     align-items: stretch;
     padding: 0px 20px;
     margin: 0;
+    position: relative;
 }
 
 .aims__item  {
-    // display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,19 +23,6 @@
     padding: 20px;
     position: relative;
     
-}
-
-.aims__item-title {
-    color: @var-black;
-    font-size: 24px;
-    line-height: 0px;
-    font-weight: 400;
-    color: @var-black;
-    text-transform: uppercase;
-    margin: 0;
-    margin-left: 70px;
-    margin-top: 29px;
-
     &::before {
         content: '';
         display: block;
@@ -53,8 +40,8 @@
         background-repeat: no-repeat;
         height: 49px;
         width: 35px;
-        left: -60px;
-        bottom: -23px;
+        left: 30px;
+        top: 24px;
         z-index: 2;
     }
 
@@ -63,8 +50,8 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        left: -68px;
-        bottom: -27px;
+        left: 23px;
+        top: 25px;
         z-index: 1;
     }
 
@@ -73,8 +60,8 @@
         background-repeat: no-repeat;
         height: 55px;
         width: 68px;
-        left: -77px;
-        bottom: -40px;
+        left: 13px;
+        top: 35px;
         z-index: 2;
     }
 
@@ -83,10 +70,22 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        left: -68px;
-        bottom: -25px;
+        left: 21px;
+        top: 24px;
         z-index: 1;
     }
+}
+
+.aims__item-title {
+    color: @var-black;
+    font-size: 24px;
+    line-height: 0px;
+    font-weight: 400;
+    color: @var-black;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 70px;
+    margin-top: 29px;
 }
 
 .aims__item-description {
@@ -150,43 +149,43 @@
         min-height: 372px;
         padding: 77px 280px 61px 53px;
         margin-top: -5px;
-    }
+        position: relative;
 
-    .aims__item-title {
-
-        font-size: 36px;
-        line-height: 37px;
-        margin: 0;
-        margin-left: 0px;
-        margin-bottom: -23px;
-    
         &--lessweight::before {
             height: 193px;
             width: 175px;
-            left: 423px;
-            bottom: -160px;
+            left: 475px;
+            top: 81px;
         }
     
         &--lessweight::after {
             height: 200px;
             width: 200px;
-            left: 393px;
-            bottom: -178px;
+            left: 444px;
+            top: 92px;
         }
     
         &--moreweight::before {
             height: 112px;
             width: 271px;
-            left: 358px;
-            bottom: -133px;
+            left: 410px;
+            top: 135px;
         }
     
         &--moreweight::after {
             height: 200px;
             width: 200px;
-            left: 395px;
-            bottom: -178px;
+            left: 448px;
+            top: 92px;
         }
+    }
+
+    .aims__item-title {
+        font-size: 36px;
+        line-height: 37px;
+        margin: 0;
+        margin-left: 0px;
+        margin-bottom: -23px;
     }
 
     .aims__item-description {
@@ -231,39 +230,39 @@
         min-height: 372px;
         padding: 81px 56px 60px 52px;
         max-width: 570px;
-    }
-
-    .aims__item-title {
-        margin-left: 165px;
-        margin-bottom: 48px;
 
         &--lessweight::before {
             height: 206px;
             width: 70px;
-            left: -151px;
-            top: -35px;
+            left: 68px;
+            top: 46px;
         }
     
         &--lessweight::after {
             height: 100px;
             width: 100px;
-            left: -166px;
-            bottom: -34px;
+            left: 55px;
+            top: 51px;
         }
     
         &--moreweight::before {
             height: 109px;
             width: 136px;
-            left: -184px;
-            bottom: -64px;
+            left: 34px;
+            top: 73px;
         }
     
         &--moreweight::after {
             height: 100px;
             width: 100px;
-            left: -163px;
-            bottom: -33px;
+            left: 55px;
+            top: 51px;
         }
+    }
+
+    .aims__item-title {
+        margin-left: 165px;
+        margin-bottom: 48px;
     }
 
     .aims__item-description {
