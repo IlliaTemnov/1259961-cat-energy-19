@@ -9,25 +9,18 @@
   margin: 0 auto;
 }
 
-.logo-mobile {
+.logo-header {
   margin-bottom: 13px;
   margin-left: 20px;
   margin-top: 10px;
+  height: 39px;
 
-  & :hover,:focus {
+  &:hover, &:focus {
     opacity: 0.8;
   }
-  & :active {
+  &:active {
     opacity: 0.6;
   }
-}
-
-.logo-tablet {
-  display: none;
-}
-
-.logo-desktop {
-  display: none;
 }
 
 .menu {
@@ -108,22 +101,22 @@
   text-decoration: none;
   font-weight: 400;
   color: @var-black;
-}
-  /* подчеркивание активного элемента */
-.menu__item-link--active {
-  display: inline-block;
-  text-decoration: none;
-  color: @var-black;
-  font-weight: 400;
-  border-bottom: 2px solid @var-green;
-}
 
-.menu__item:hover > .menu__item-link,   .menu__item:focus > .menu__item-link{
-  color: @var-hover-black;
-}
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
 
-.menu__item:active > .menu__item-link{
-  color: @var-active-black;
+  &:active {
+    opacity: 0.3;
+  }
+    /* подчеркивание активного элемента */
+  &--active {
+    display: inline-block;
+    text-decoration: none;
+    color: @var-black;
+    font-weight: 400;
+    border-bottom: 2px solid @var-green;
+  }
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -160,16 +153,10 @@
     padding: 24px 13px 0px 29px;
   }
 
-  .logo-mobile {
-    display: none;
-  }
-
-  .logo-tablet {
-    display: block;
-  }
-
-  .logo-desktop {
-    display: none;
+  .logo-header {
+    height: 59px;
+    margin-left: -5px;
+    margin-top: 0;
   }
 
   .menu {
@@ -220,16 +207,11 @@
     margin-bottom: 70px;
   }
 
-  .logo-mobile {
-    display: none;
-  }
-
-  .logo-tablet {
-    display: none;
-  }
-
-  .logo-desktop {
-    display: block;
+  .logo-header {
+    height: 60px;
+    margin-left: 3px;
+    margin-top: 0;
+    width: 203px;
   }
 
   .menu__box {
@@ -259,15 +241,16 @@
     &--active {
       color: @var-white;
       font-size: 20px;
+      border-bottom: 2px solid @var-white;
     }
-  }
 
-  .menu__item-link--active{
-    border-bottom: 2px solid @var-green;
-  }
-
-  .menu__item-link-white--active{
-    border-bottom: 2px solid @var-white
+    &:hover, &:focus {
+      opacity: 0.6;
+    }
+  
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .button--large {

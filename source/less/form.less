@@ -58,18 +58,18 @@ input[placeholder], textarea[placeholder] {
     margin-left: 14px;
     height: 45px;
     border: 1px solid @var-frame-darkgrey;
-}
 
-.form__text-input:active {
-    border: 1px solid @var-black;    
-}
+    &:active {
+        border: 2px solid @var-black;    
+    }
 
-.form__text-input:hover {
-    border: 1px solid @var-grey;    
-}
+    &:hover, &:focus {
+        border: 1px solid @var-grey;    
+    }
 
-.form__text-input:invalid{
-    border: 1px solid @var-invalid;  
+    &:invalid{
+        border: 1px solid @var-invalid;  
+    }
 }
 
 .form__radio-wraper {
@@ -91,6 +91,14 @@ input[placeholder], textarea[placeholder] {
     margin-left: 45px;
     position: relative;
     cursor: pointer;
+
+    &:active {
+        opacity: 0.3;
+    }
+
+    &:focus {
+        opacity: 0.9;
+    }  
 }
 
 .form__radio-box {
@@ -101,6 +109,10 @@ input[placeholder], textarea[placeholder] {
     background-repeat: no-repeat;
     left: -45px;
     top: -7px;
+    
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 .form__radio-input:checked + .form__radio-box {
@@ -218,6 +230,7 @@ input[placeholder], textarea[placeholder] {
 }
 
 .form__label-checkbox {
+    display: inline-block;
     font-size: 16px;
     line-height: 18px;
     color: @var-lightblack;
@@ -225,6 +238,10 @@ input[placeholder], textarea[placeholder] {
     margin-left: 45px;
     position: relative;
     cursor: pointer;
+
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 .form__check-box{

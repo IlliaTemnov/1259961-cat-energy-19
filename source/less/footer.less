@@ -9,13 +9,21 @@
     position: relative;
 }
 
-.logo--footer {
+.footer__logo {
     display: block;
     min-height: 94px;
     text-align: center;
     box-sizing: border-box;
     padding: 41px 96px 30px;
     position: relative;
+
+    &:hover,  &:focus {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
 }
 
 .social {
@@ -50,6 +58,31 @@
     text-decoration: none;
 }
 
+.social__item-link-image {
+    fill: @var-darkgrey;
+
+    &:hover, &:focus {
+        fill: @var-green; 
+    }
+
+    &:active {
+        fill: @var-green; 
+        opacity: 0.3;
+    }
+}
+
+    .copyright__logo {
+        &:hover, &:focus {
+            fill: @var-green; 
+        }
+    
+        &:active {
+            fill: @var-green; 
+            opacity: 0.3;
+        }
+    }
+
+
 @media(min-width: @tablet-width) {
     
     .page-footer__container {
@@ -67,8 +100,15 @@
 
     }
 
+    .footer__logo {
+        padding: 41px 30px 47px;
+        width: 275px;
+        text-align: start;
+
+    }
+
     .social {
-        padding: 4px 71px 11px 4px;
+        padding: 4px 71px 13px 4px;
         border: none;
         margin: 0;
         min-width: 205px;
@@ -81,18 +121,20 @@
     .copyright {
         min-width: 207px;
         padding-right: 30px;
+        padding-bottom: 26px;
     }
 
     .copyright__name {
         margin-right: 23px;
         margin-bottom: 10px;
     }
+
 }
 
 @media(min-width: @desktop-width) {
 
-    .logo--footer {
-        padding: 37px 22px 37px 13px;
+    .footer__logo {
+        padding: 40px 22px 37px 72px;
     }
 
     .page-footer__container {
@@ -109,5 +151,10 @@
     .copyright {
         padding-right: 70px;
         padding-top: 30px;
+    }
+
+    .copyright__name {
+        margin-right: 23px;
+        margin-bottom: 0;
     }
 }
