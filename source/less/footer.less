@@ -51,6 +51,7 @@
     padding: 20px;
     padding-right: 23px;
 }
+
 .copyright__name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -71,16 +72,17 @@
     }
 }
 
-    .copyright__logo {
-        &:hover, &:focus {
-            fill: @var-green; 
-        }
-    
-        &:active {
-            fill: @var-green; 
-            opacity: 0.3;
-        }
+.copyright__logo {
+    &:hover, &:focus {
+        fill: @var-green; 
+        
     }
+    
+    &:active {
+        fill: @var-green; 
+        opacity: 0.3;
+        }
+}
 
 
 @media(min-width: @tablet-width) {
