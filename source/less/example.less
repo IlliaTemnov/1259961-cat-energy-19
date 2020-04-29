@@ -99,7 +99,7 @@
     background-size: 311px auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/before-mobile@2x.png");
+        background-image: url('../img/before-mobile@2x.png');
     }
 }
 
@@ -110,7 +110,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/after-mobile@2x.png");
+        background-image: url('../img/after-mobile@2x.png');
     }
 }
 
@@ -339,14 +339,14 @@
         &--before {
             background-image: url('../img/before-tablet@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-                background-image: url("../img/before-tablet@2x.png");
+                background-image: url('../img/before-tablet@2x.png');
             }
         }
 
         &--after {
             background-image: url('../img/after-tablet@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-                background-image: url("../img/after-tablet@2x.png");
+                background-image: url('../img/after-tablet@2x.png');
             }
         }
     }
@@ -379,7 +379,7 @@
         justify-content: space-around;
         background-color: transparent;
         padding-left: 55px;
-        margin-top: -22px;
+        margin-top: -55px;
 
     }
 
@@ -391,20 +391,20 @@
         background-color: transparent;
         border-top: 1px solid transparent;
         flex-wrap: wrap;
-        height: 560px;
+        min-height: 560px;
         width: 435px;
         padding: 0;
         z-index: 1;
 
         &--small {
             flex-direction: column; 
-            width: 435px;
+           width: 435px;
             align-items: flex-start;
         }
     }
     .example__description {
         max-width: 435px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
         margin-top: 35px;
     }
 
@@ -416,6 +416,7 @@
         display: flex;
         justify-content: space-between;
         width: 330px;
+        margin-bottom: 69px;
     }
 
     .slider-list__item {
@@ -428,14 +429,14 @@
         &--before {
             background-image: url('../img/before-desktop@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-                background-image: url("../img/before-desktop@2x.png");
+                background-image: url('../img/before-desktop@2x.png');
             }
         }
 
         &--after {
             background-image: url('../img/after-desktop@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-                background-image: url("../img/after-desktop@2x.png");
+                background-image: url('../img/after-desktop@2x.png');
             }
         }
     }
@@ -452,6 +453,7 @@
 
     .example__title {
         margin-top: 36px;
+        max-width: 400px;
     }
 
     .benefit-list__item {

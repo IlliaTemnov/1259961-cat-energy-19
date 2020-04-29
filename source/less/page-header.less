@@ -45,7 +45,7 @@
   z-index: 1;
 }
 
-  /*"гамбургер" */
+  /*гамбургер */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -169,6 +169,7 @@
 
   .menu__box {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
@@ -182,12 +183,16 @@
     padding: 0;
     border-bottom: none;
     height: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 7px;
   }
 
   .menu__item-link, .menu__item-link--active {
     font-size: 18px;
     line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 7px;
   }
 
@@ -237,6 +242,8 @@
   .menu__item-link-white {
     color: @var-white;
     font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &--active {
       color: @var-white;
