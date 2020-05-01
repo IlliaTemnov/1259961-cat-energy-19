@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="preload" href="build/css/style.min.css" as="style">
+  <link rel="preload" href="build/js/script.min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
 </head>
 
 <body>
@@ -294,14 +297,15 @@
           <h3 class="stock__title visually-hidden">Акция</h3>
           <div class="stock__description"><span class="stock__description-text">Закажите все</span><span
               class="stock__description-text">и получите чехол для </span><span class="stock__description-text">кота в
-              подарок!</span></div>
+              подарок!</span>
+          </div>
         </div>
       </div>
     </section>
     <section class="map">
       <div class="map__contacts contacts contacts--grey">
         <h3 class="contacts__title">
-          <p>Приглашаем</p> к сотрудничеству дилеров!
+          <span>Приглашаем</span> к сотрудничеству дилеров!
         </h3>
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
@@ -316,27 +320,27 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
-      <a href="#" class="footer__logo"><img src="img/logo-footer.svg" width="128" height="24"
+      <a href="#" class="footer__logo"><img src="/img/logo-footer.svg" width="128" height="24"
           alt="Надпись Cat Energy"></a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__item-link">
-            <svg class="social__item-link-image" width="22" height="12" alt="Вконтакте">
-              <use xlink:href="img/sprite.svg#mvk"></use>
+            <svg class="social__item-link-image" width="22" height="12" aria-label="Вконтакте">
+              <use xlink:href="/img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__item-link">
-            <svg class="social__item-link-image" width="17" height="17" alt="Инстаграм">
-              <use xlink:href="img/sprite.svg#minsta"></use>
+            <svg class="social__item-link-image" width="17" height="17" aria-label="Инстаграм">
+              <use xlink:href="/img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__item-link">
-            <svg class="social__item-link-image" width="10" height="19" alt="Фэйсбук">
-              <use xlink:href="img/sprite.svg#mfb"></use>
+            <svg class="social__item-link-image" width="10" height="19" aria-label="Фэйсбук">
+              <use xlink:href="/img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -344,14 +348,14 @@
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__name">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" alt="Логотип HTML Academy" class="copyright__logo">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          <svg width="27" height="34" aria-label="Логотип HTML Academy" class="copyright__logo">
+            <use xlink:href="/img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/map.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

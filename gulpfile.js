@@ -12,9 +12,13 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
-var svgstore = require('gulp-svgstore');
+var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
+var csso = require("gulp-csso");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 
 
 gulp.task("css", function () {
@@ -50,7 +54,7 @@ gulp.task("webp", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -72,7 +76,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -96,9 +99,18 @@ gulp.task("sprite", function () {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
-      include()
-    ]))
+      include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
+});
+
+gulp.task("compress", function () {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    (rename("script.min.js")),
+    gulp.dest("build/js")
+  );
 });
 
 gulp.task("build", gulp.series(
@@ -106,11 +118,13 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "compress"
 ));
 
-gulp.task("build", gulp.series("css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series(
+  "build",
+  "server"));
 
 
 

@@ -521,16 +521,20 @@ input[placeholder], textarea[placeholder] {
     }
 
     .form__title {
+        display: inline-block;
         margin-left: 0px;
         margin-bottom: 86px;
         margin-top: 32px;
+        width: 1000px;
     }
 
     .form__wraper {
         display: flex;
+        flex-wrap: wrap;
         width: 1225px;
         justify-content: space-between;
         margin-bottom: 50px;
+
     }
 
     .form__comments {
@@ -547,7 +551,7 @@ input[placeholder], textarea[placeholder] {
     
     .form__radio-wraper {
         min-height: 196px;
-        padding: 30px 0px 39px 0px ;
+        padding: 17px 0 26px;
         border: 1px solid @var-frame-grey;
         justify-content: space-between;
         margin-bottom: 0;
@@ -559,13 +563,14 @@ input[placeholder], textarea[placeholder] {
         left: -58px;
         top: -6px;
     }
-    .form__label-radio {
-        margin-left: 78px;
-    }
 
+    .form__label-radio {
+        margin: 15px 0px 15px 78px;
+    }
 
     .form__contacts-wraper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         min-width: 1220px;
     }
@@ -614,10 +619,7 @@ input[placeholder], textarea[placeholder] {
 
     .form__additional-wraper{
         width: 1200px;
-    }
-    
-    .form__button-wrapper {
-        margin-top: -63px;
+        min-height: 80px;
     }
 
     .form__additional {
