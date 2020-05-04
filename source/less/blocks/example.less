@@ -118,6 +118,9 @@
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+.controls {
 
     &--before {
         text-transform: uppercase;
@@ -207,12 +210,12 @@
         box-sizing: border-box;
         border-top: 1px solid @var-frame-grey;
         padding: 42px 30px 70px 30px;
+    }
 
-        &--small {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .example-wrap__small {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .example__title {
@@ -316,8 +319,8 @@
 
     }
 
-    .example__slider-controls--before,
-    .example__slider-controls--after  {
+    .controls--before,
+    .controls--after  {
         font-size: 20px;
         line-height: 20px;
         padding-bottom: 5px;
@@ -333,7 +336,7 @@
         padding: 0px 45px;
         box-sizing: border-box;
         background-size: 689px auto;
-        background-position: 46px 15px;
+        background-position: center;
         z-index: 1;
 
         &--before {
@@ -380,7 +383,6 @@
         background-color: transparent;
         padding-left: 55px;
         margin-top: -55px;
-
     }
 
     .example-wrap {
@@ -395,13 +397,14 @@
         width: 435px;
         padding: 0;
         z-index: 1;
-
-        &--small {
-            flex-direction: column; 
-           width: 435px;
-            align-items: flex-start;
-        }
     }
+
+    .example-wrap__small {
+        flex-direction: column; 
+        width: 435px;
+         align-items: flex-start;
+    }
+
     .example__description {
         max-width: 435px;
         margin-bottom: 15px;
@@ -421,9 +424,9 @@
 
     .slider-list__item {
         width: 730px;
-        background-position: 26px -19px;;
         margin-bottom: 28px;
         background-size: 687px auto;
+        background-position: center;
         z-index: 1;
 
         &--before {
@@ -493,7 +496,9 @@
     .example__slider-controls {
         width: 100%;
         position: relative;
+    }
 
+    .controls {
         &--before {
             margin-right: -73px;
             position: absolute;
@@ -508,6 +513,7 @@
             top: 0;
         }
     }
+    
 }      
 
 

@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="preload" href="build/css/style.min.css" as="style">
-  <link rel="preload" href="build/js/script.min.js" as="script">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="preload" href="./js/script.min.js" as="script">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="./fonts/oswaldregular.woff" as="font">
 </head>
 
 <body>
   <header class="page-header">
     <a href="#" class="logo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" class="logo-header" width="191" height="39" alt="Корм для котшек и котов">
+        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+        <img src="./img/logo-mobile.svg" class="logo-header" width="191" height="39" alt="Корм для котшек и котов">
       </picture>
     </a>
     <nav class="hamburger-menu menu">
@@ -29,7 +29,8 @@
       </label>
       <ul class="menu__box">
         <li class="menu__item"><a href="index.html"
-            class="menu__item-link--active menu__item-link-white--active">Главная</a></li>
+            class="menu__item-link menu__item-link--active menu__item-link-white menu__item-link-white--active">Главная</a>
+        </li>
         <li class="menu__item"><a href="catalog.html" class="menu__item-link  menu__item-link-white">Каталог
             продукции</a></li>
         <li class="menu__item"><a href="form.html" class="menu__item-link  menu__item-link-white">Подбор программы</a>
@@ -41,10 +42,11 @@
     <section class="promo">
       <picture>
         <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x ">
-        <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x ">
-        <source media="(min-width: 768px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x ">
-        <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+          srcset="./img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x ">
+        <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x ">
+        <source media="(min-width: 768px)"
+          srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x ">
+        <img class="promo__image" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x"
           alt="Пример упаковки корма">
       </picture>
       <div class="promo__wrapper">
@@ -100,8 +102,8 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день.</p>
-          <div class="example-wrap--small">
+            часов в день. </p>
+          <div class="example-wrap__small">
             <ul class="example__benefit-list benefit-list">
               <li class="benefit-list__item">
                 <span class="benefit-list__item-title">5 кг</span>
@@ -124,11 +126,11 @@
             </li>
           </ul>
           <div class="example__slider-controls">
-            <span class="example__slider-controls--before">Было</span>
+            <label for="result-before" class=" controls controls--before">Было</label>
             <div class="example__slider-controls-scale">
               <span class="example__slider-controls-scalescroll"></span>
             </div>
-            <span class="example__slider-controls--after">Стало</span>
+            <label for="result-after" class=" controls controls--after">Стало</label>
           </div>
         </div>
       </div>
@@ -152,27 +154,27 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
-      <a href="#" class="footer__logo"><img src="/img/logo-footer.svg" width="128" height="24"
+      <a href="#" class="page-footer__logo"><img src="./img/logo-footer.svg" width="128" height="24"
           alt="Надпись Cat Energy"></a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__item-link">
             <svg class="social__item-link-image" width="22" height="12" aria-label="Вконтакте">
-              <use xlink:href="/img/sprite.svg#icon-vk"></use>
+              <use xlink:href="./img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__item-link">
             <svg class="social__item-link-image" width="17" height="17" aria-label="Инстаграм">
-              <use xlink:href="/img/sprite.svg#icon-insta"></use>
+              <use xlink:href="./img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__item-link">
             <svg class="social__item-link-image" width="10" height="19" aria-label="Фэйсбук">
-              <use xlink:href="/img/sprite.svg#icon-fb"></use>
+              <use xlink:href="./img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -181,13 +183,13 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__name">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" aria-label="Логотип HTML Academy" class="copyright__logo">
-            <use xlink:href="/img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
