@@ -19,6 +19,7 @@ var htmlmin = require("gulp-htmlmin");
 var csso = require("gulp-csso");
 var uglify = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
+var concat = require('gulp-concat');
 
 
 gulp.task("css", function () {
@@ -66,7 +67,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("refresh", function () {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
@@ -105,12 +106,12 @@ gulp.task("html", function () {
 });
 
 gulp.task("compress", function () {
-  return pipeline(
-    gulp.src("source/js/*.js"),
-    uglify(),
-    (rename("script.min.js")),
-    gulp.dest("build/js")
-  );
+  return gulp.src("source/js/*.js")
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'))
+    .pipe(uglify())
+    .pipe((rename("main.min.js")))
+    .pipe(gulp.dest('build/js'));
 });
 
 gulp.task("build", gulp.series(

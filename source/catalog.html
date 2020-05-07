@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="preload" href="./js/script.min.js" as="script">
+  <link rel="preload" href="./js/main.min.js" as="script">
   <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="./fonts/oswaldregular.woff" as="font">
 
@@ -41,207 +41,251 @@
       <h1 class="main-catalog__title medium-title">Каталог продукции</h1>
       <ul class="main-catalog__list">
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/chicken-small-tablet@1x.webp 1x,  ./img/chicken-small-tablet@2x.webp 2x ">
-            <source type="image/webp"
-              srcset="./img/chicken-small-mobile@1x.webp 1x,  ./img/chicken-small-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset="./img/chicken-small-tablet@1x.png 1x, ./img/chicken-small-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--small" src="./img/chicken-small-mobile@1x.jpg"
-              srcset="./img/chicken-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/chicken-small-desktop@1x.webp 1x,  ./img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/chicken-small-tablet@1x.webp 1x,  ./img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/chicken-small-mobile@1x.webp 1x,  ./img/chicken-small-mobile@2x.webp 2x">
+              <source media="(min-width:1440px)"
+                srcset="./img/chicken-small-desktop@1x.png 1x,  ./img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset="./img/chicken-small-tablet@1x.png 1x,  ./img/chicken-small-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--small" src="./img/chicken-small-mobile@1x.jpg"
+                srcset="./img/chicken-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>500г</td>
+            <table class="list-item__description  description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">500 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Курица</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">700 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/chicken-big-tablet@1x.webp 1x, ./img/chicken-big-tablet@2x.webp 2x ">
-            <source type="image/webp"
-              srcset="./img/chicken-big-mobile@1x.webp 1x, ./img/chicken-big-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset=" ./img/chicken-big-tablet@1x.png 1x, ./img/chicken-big-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--big" src=" ./img/chicken-big-mobile@1x.jpg"
-              srcset=" ./img/chicken-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/chicken-big-desktop@1x.webp 1x, ./img/chicken-big-desktop@2x.webp 2x ">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/chicken-big-tablet@1x.webp 1x, ./img/chicken-big-tablet@2x.webp 2x ">
+              <source type="image/webp"
+                srcset="./img/chicken-big-mobile@1x.webp 1x, ./img/chicken-big-mobile@2x.webp 2x ">
+              <source media="(min-width:1440px)"
+                srcset=" ./img/chicken-big-desktop@1x.png 1x, ./img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset=" ./img/chicken-big-tablet@1x.png 1x, ./img/chicken-big-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--big" src=" ./img/chicken-big-mobile@1x.jpg"
+                srcset=" ./img/chicken-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000г</td>
+            <table class="list-item__description description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">1000 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Курица</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">1000 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset=" ./img/fish-small-tablet@1x.webp 1x,  ./img/fish-small-tablet@2x.webp 2x ">
-            <source type="image/webp" srcset="./img/fish-small-mobile@1x.webp 1x, ./img/fish-small-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset="./img/fish-small-tablet@1x.png 1x, ./img/fish-small-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--small" src="./img/fish-small-mobile@1x.jpg"
-              srcset="./img/fish-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset=" ./img/fish-small-desktop@1x.webp 1x,  ./img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset=" ./img/fish-small-tablet@1x.webp 1x,  ./img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/fish-small-mobile@1x.webp 1x, ./img/fish-small-mobile@2x.webp 2x ">
+              <source media="(min-width:1440px)"
+                srcset="./img/fish-small-desktop@1x.png 1x, ./img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset="./img/fish-small-tablet@1x.png 1x, ./img/fish-small-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--small" src="./img/fish-small-mobile@1x.jpg"
+                srcset="./img/fish-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy PRO 500 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>500г</td>
+            <table class="list-item__description description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">500 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Рыба</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">700 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/fish-big-tablet@1x.webp 1x, ./img/fish-big-tablet@2x.webp 2x ">
-            <source type="image/webp" srcset="./img/fish-big-mobile@1x.webp 1x, ./img/fish-big-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset=" ./img/fish-big-tablet@1x.png 1x, ./img/fish-big-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--big" src=" ./img/fish-big-mobile@1x.jpg"
-              srcset=" ./img/fish-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/fish-big-desktop@1x.webp 1x, ./img/fish-big-desktop@2x.webp 2x ">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/fish-big-tablet@1x.webp 1x, ./img/fish-big-tablet@2x.webp 2x ">
+              <source type="image/webp" srcset="./img/fish-big-mobile@1x.webp 1x, ./img/fish-big-mobile@2x.webp 2x ">
+              <source media="(min-width:1440px)"
+                srcset=" ./img/fish-big-desktop@1x.png 1x, ./img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset=" ./img/fish-big-tablet@1x.png 1x, ./img/fish-big-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--big" src=" ./img/fish-big-mobile@1x.jpg"
+                srcset=" ./img/fish-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy PRO 1000 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000г</td>
+            <table class="list-item__description description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">1000 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Рыба</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">1000 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/buckwheat-small-tablet@1x.webp 1x, ./img/buckwheat-small-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="./img/buckwheat-small-mobile@1x.webp 1x, ./img/buckwheat-small-mobile@2x.webp 2x">
-            <source media="(min-width:768px)"
-              srcset="./img/buckwheat-small-tablet@1x.png 1x, ./img/buckwheat-small-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--small" src="./img/buckwheat-small-mobile@1x.jpg"
-              srcset="./img/buckwheat-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/buckwheat-small-desktop@1x.webp 1x, ./img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/buckwheat-small-tablet@1x.webp 1x, ./img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/buckwheat-small-mobile@1x.webp 1x, ./img/buckwheat-small-mobile@2x.webp 2x">
+              <source media="(min-width:1440px)"
+                srcset="./img/buckwheat-small-desktop@1x.png 1x, ./img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset="./img/buckwheat-small-tablet@1x.png 1x, ./img/buckwheat-small-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--small" src="./img/buckwheat-small-mobile@1x.jpg"
+                srcset="./img/buckwheat-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>700г</td>
+            <table class="list-item__description description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">700 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Гречка</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>400 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">400 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset=" ./img/buckwheat-big-tablet@1x.webp 1x, ./img/buckwheat-big-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset=" ./img/buckwheat-big-mobile@1x.webp 1x, ./img/buckwheat-big-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset="./img/buckwheat-big-tablet@1x.png 1x, ./img/buckwheat-big-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--big" src="./img/buckwheat-big-mobile@1x.jpg"
-              srcset="./img/buckwheat-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset=" ./img/buckwheat-big-desktop@1x.webp 1x, ./img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset=" ./img/buckwheat-big-tablet@1x.webp 1x, ./img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset=" ./img/buckwheat-big-mobile@1x.webp 1x, ./img/buckwheat-big-mobile@2x.webp 2x ">
+              <source media="(min-width:1440px)"
+                srcset="./img/buckwheat-big-desktop@1x.png 1x, ./img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset="./img/buckwheat-big-tablet@1x.png 1x, ./img/buckwheat-big-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--big" src="./img/buckwheat-big-mobile@1x.jpg"
+                srcset="./img/buckwheat-big-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy Slim 1000 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000г</td>
+            <table class="list-item__description description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">1000 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Гречка</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">700 Р.</td>
               </tr>
             </table>
           </div>
           <a href="#" class="list-item__button button">Заказать</a>
         </li>
         <li class="main-catalog__list-item list-item">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset=" ./img/rice-small-tablet@1x.webp 1x,  ./img/rice-small-tablet@2x.webp 2x ">
-            <source type="image/webp" srcset=" ./img/rice-small-mobile@1x.webp 1x, ./img/rice-small-mobile@2x.webp 2x ">
-            <source media="(min-width:768px)"
-              srcset=" ./img/rice-small-tablet@1x.png 1x, ./img/rice-small-tablet@2x.png 2x">
-            <img class="list-item__image list-item__image--small" src=" ./img/rice-small-mobile@1x.jpg"
-              srcset=" ./img/rice-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset=" ./img/rice-small-desktop@1x.webp 1x,  ./img/rice-small-desktop@2x.webp 2x ">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset=" ./img/rice-small-tablet@1x.webp 1x,  ./img/rice-small-tablet@2x.webp 2x ">
+              <source type="image/webp"
+                srcset=" ./img/rice-small-mobile@1x.webp 1x, ./img/rice-small-mobile@2x.webp 2x ">
+              <source media="(min-width:1440px)"
+                srcset=" ./img/rice-small-desktop@1x.png 1x, ./img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width:768px)"
+                srcset=" ./img/rice-small-tablet@1x.png 1x, ./img/rice-small-tablet@2x.png 2x">
+              <img class="list-item__image list-item__image--small" src=" ./img/rice-small-mobile@1x.jpg"
+                srcset=" ./img/rice-small-mobile@2x.jpg 2x" alt="Внешний вид упаковки">
+            </picture>
+          </a>
           <div class="main-catalog__list-wrapper">
             <h3 class="list-item__title">Cat Energy Slim 500 г</h3>
-            <table class="list-item__description">
-              <tr>
-                <td>Объем</td>
-                <td>500г</td>
+            <table class="list-item__description  description-table">
+              <tr class="description-table__row">
+                <td class="description-table__cell">Объем</td>
+                <td class="description-table__cell">500 г</td>
               </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рис</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Вкус</td>
+                <td class="description-table__cell">Рис</td>
               </tr>
-              <tr>
-                <td>Цена</td>
-                <td>500 Р.</td>
+              <tr class="description-table__row">
+                <td class="description-table__cell">Цена</td>
+                <td class="description-table__cell">500 Р.</td>
               </tr>
             </table>
           </div>
@@ -316,9 +360,6 @@
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </p>
       </div>
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD8UlRs5qnQOIJkLo6-6tEBPn3NpFrRCo&callback=initMap">
-        </script>
       <div class="map__treasure" id="map">
         <span class="map__treasure-pin"></span>
       </div>
@@ -362,7 +403,9 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.min.js"></script>
+  <script async defer src="./js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD8UlRs5qnQOIJkLo6-6tEBPn3NpFrRCo&callback=initMap">
+  </script>
 </body>
 
 </html>

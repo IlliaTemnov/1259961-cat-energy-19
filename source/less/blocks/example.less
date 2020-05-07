@@ -190,8 +190,9 @@
 @media(min-width: @tablet-width) {
 
     .example {
-        background: linear-gradient(to top, @var-lightgrey 25%, white 75%);
-        min-height: 1082px;
+        // background: linear-gradient(to top, @var-lightgrey 25%, white 75%);
+        background: none;
+        min-height: 1052px;
     }
 
     .example-container {
@@ -210,6 +211,7 @@
         box-sizing: border-box;
         border-top: 1px solid @var-frame-grey;
         padding: 42px 30px 70px 30px;
+        margin-top: -31px;
     }
 
     .example-wrap__small {
@@ -273,6 +275,7 @@
         width: 175px;
         color: @var-black;
         margin: 0;
+        z-index: 1;
     }
 
     .example__slider-controls-scale {
@@ -284,6 +287,7 @@
         box-sizing: border-box;
         border: none;
         background-color: #dcdcdc;
+        z-index: 1;
     }
     
     .example__slider-controls-scalescroll {
@@ -296,6 +300,7 @@
         position: relative;
         margin-top: -17px;
         margin-left: 45%;
+        z-index: 1;
 
         &:before {
             content: '';
@@ -307,6 +312,7 @@
             border: solid 1px @var-frame-darkgrey;
             top: 36%;
             left: 35%;
+            z-index: 1;
         }
 
         &:hover,  &:focus {
@@ -330,9 +336,9 @@
     }
 
     .slider-list__item {
-        min-height: 517px;
-        margin-bottom: 40px;
-        width: 100%;
+        min-height: 548px;
+        margin-bottom: 9px;
+        width: 101%;
         padding: 0px 45px;
         box-sizing: border-box;
         background-size: 689px auto;
@@ -343,6 +349,7 @@
             background-image: url('../img/before-tablet@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
                 background-image: url('../img/before-tablet@2x.png');
+                z-index: 1;
             }
         }
 
@@ -350,17 +357,18 @@
             background-image: url('../img/after-tablet@1x.png');
             @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
                 background-image: url('../img/after-tablet@2x.png');
+                z-index: 1;
             }
         }
     }
 
     .example__slider-background {
         display: block;
-        height: 462px;
+        height: 460px;
         width: 100%;
         position: absolute;
         background-color: #eaeaea;
-        top: 170px;
+        top: 185px;
         left: 0;
         z-index: 0;
     }
@@ -424,10 +432,11 @@
 
     .slider-list__item {
         width: 730px;
-        margin-bottom: 28px;
+        margin-bottom: 0;
         background-size: 687px auto;
-        background-position: center;
+        background-position: 30px -20px;
         z-index: 1;
+        position: relative;
 
         &--before {
             background-image: url('../img/before-desktop@1x.png');
@@ -446,16 +455,19 @@
 
     .example__slider-background {
         width: 1440px;
-        left: -660px;
+        left: -654px;
+        top: 170px;
         bottom: 0;
         z-index: 0;
     }
+
     .example__slider {
         height: 600px;
     }
 
     .example__title {
-        margin-top: 36px;
+        margin-top: 63px;
+        margin-bottom: 65px;
         max-width: 400px;
     }
 
@@ -472,8 +484,8 @@
         line-height: 14px;
         bottom: -10px;
         left: 15%;
-        background-color: @var-lightgrey;
-        border: 5px solid @var-lightgrey;
+        background-color: #eaeaea;
+        border: 5px solid #eaeaea;
 
         &--right {
             left: 12%;

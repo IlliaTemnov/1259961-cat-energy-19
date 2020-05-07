@@ -18,6 +18,7 @@
     line-height: 37px;
     padding: 26px 20px 40px;
     margin: 0;
+    letter-spacing: -1.2px;
 }
 
 .list-item {
@@ -26,7 +27,7 @@
     box-sizing: border-box;
     align-items: center;
     min-height: 209px;
-    padding: 2px 23px 25px 20px;
+    padding: 2px 20px 25px 20px;
     border-top: 1px solid @var-frame-grey;
 }
 
@@ -45,13 +46,6 @@
     color: @var-grey;
     min-width: 132px;
     text-align: left;
-    margin-left: -3px;
-}
-
-.list-item__description td:last-child{
-    display: inline-block;
-    min-width: 94px;
-    text-align: right;
 }
 
 .list-item__title {
@@ -59,9 +53,8 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
-    max-width: 75px;
-    margin-bottom: 12px;
-    margin-top: -2px;
+    max-width: 80px;
+    margin: -1px 2px 12px;
 }
 
 .list-item__button {
@@ -98,6 +91,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: -9px;
+    letter-spacing: -0.5px;
 
     &::before {
         content: '';
@@ -123,7 +117,11 @@
 .main-catalog__more-button {
     width: 100%;
     text-align: center;
-    letter-spacing: 0.6px;
+}
+
+.description-table__cell:last-child {
+   text-align: right;
+   min-width: 94px;
 }
 
 @media(min-width: @tablet-width) {
@@ -141,6 +139,7 @@
         margin-bottom: 122px;
         padding-left: 30px;
         padding-top: 55px;
+        letter-spacing: -2px;
     }
 
     .list-item {
@@ -154,22 +153,25 @@
         background-color: @var-lightgrey;
         margin-bottom: 141px;
         border: transparent;
+        position: relative;
     }
 
     .list-item__title {
         font-size: 20px;
         line-height: 20px;
         font-weight: 500px;
-        max-width: 130px;
+        max-width: 132px;
         font-weight: 500;
         text-align: center;
         margin-bottom: 19px;
         margin-top: 6px;
+        letter-spacing: -0.5px;
     }
 
     .main-catalog__list-wrapper {
         width: 250px;
         align-items: center;
+        margin-top: 90px;
     }
 
     .list-item__description {
@@ -179,18 +181,6 @@
         line-height: 16px;
         width: 250px;
         text-align: center;
-    }
-
-    .list-item__description td {
-        text-align: left;
-        padding-bottom: 5px;
-        border-bottom: 1px solid @var-frame-grey;
-    }
-
-    .list-item__description td:nth-child(2n){
-        text-align: right;
-        width: 190px;
-        height: 22px;
     }
 
     .list-item__button {
@@ -230,32 +220,50 @@
         }
     }
 
+    .description-table__cell:last-child {
+        text-align: right;
+        min-width: 120px;
+    }
+
     .main-catalog__more-description {
         width: 170px;
         font-size: 16px;
         line-height: 16px;
         text-align: center;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
 
     .list-item__image {
-        display: block;
+        position: absolute;
+        bottom: 303px;
+        left: 0;
+        width: 324px;
+        height: auto;
+    }
 
-        &--small {
-            width: 161px;
-            height: 172px;
-            margin-top: -81px;
-            object-fit: cover;
-            }
-
-        &--big {
-             width: 195px;
-            height: 208px;
-            margin-top: -117px;
-            object-fit: cover;
-        }
+    .description-table {
+        text-align: center;
+        border-collapse: collapse;
+        width: auto;
+    }
+    .description-table__row {
+        border-bottom: 1px solid @var-frame-grey;
+    }
+    .description-table__cell {
+        padding: 8px 0 7px;
+        line-height: 16px;
+        color: #444;
+    }
+    .description-table__cell:first-child {
+        text-align: left;
+    }
+    .description-table__cell:last-child {
+        text-align: right;
+        min-width: 200px;
     }
 }
+
+
 
 @media(min-width: @desktop-width) {
 
@@ -278,6 +286,7 @@
     .list-item {
         width: 245px;
         padding: 38px 37px;
+        position: relative;
     }
 
     .list-item__button {
@@ -295,12 +304,28 @@
 
     .list-item__title {
         color: @var-black;
-        margin-bottom: 25px
+        margin-bottom: 20px;
     }
 
-    .list-item__description td:nth-child(2n){
+    .description-table {
+        text-align: center;
+        border-collapse: collapse;
+            width: auto;
+    }
+    .description-table__row {
+        border-bottom: 1px solid @var-frame-grey;
+    }
+    .description-table__cell {
+        padding: 8px 0 7px;
+        line-height: 16px;
+        color: #444;
+    }
+    .description-table__cell:first-child {
+        text-align: left;
+    }
+    .description-table__cell:last-child {
         text-align: right;
-        width: 100px;
+        min-width: 120px;
     }
 
     .main-catalog__more {
@@ -319,20 +344,12 @@
     }
 
     .list-item__image {
-
-        &--small {
-            width: 161px;
-            height: 172px;
-            margin-top: -81px;
-            object-fit: cover;
-        }
-
-        &--big {
-            width: 195px;
-            height: 208px;
-            margin-top: -117px;
-            object-fit: cover;
-        }
+        position: absolute;
+        bottom: 310px;
+        left: 0;
+        width: 245px;
+        height: auto;
+        bottom: 301px;
     }
 }
 

@@ -74,7 +74,7 @@
   top: 85px;
   left: -20px;
   width: 100%;
-  // min-height: 196px;
+  height: 196px;
   margin: 0;
   padding: 0;
   background-color: @var-white;
@@ -154,7 +154,7 @@
   }
 
   .logo-header {
-    height: 59px;
+    height: 57px;
     margin-left: -5px;
     margin-top: 0;
   }
@@ -173,10 +173,11 @@
     flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
-    min-width: 475px;
+    width: 475px;
     padding-top: 15px;
     z-index: 0;
-    flex-grow: 1;
+    flex-grow: 0;
+    height: auto;
   }
 
   .menu__item {
@@ -191,8 +192,8 @@
   .menu__item-link, .menu__item-link--active {
     font-size: 18px;
     line-height: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
+    // padding-left: 5px;
+    // padding-right: 5px;
     padding-bottom: 7px;
   }
 
@@ -221,7 +222,9 @@
 
   .menu__box {
     background-color:  transparent;
-    width: 523px;
+    width: 516px;
+    height: auto;
+    padding-top: 17px;
   }
 
   .menu__item {
@@ -231,6 +234,7 @@
   .menu__item-link {
     color: @var-black;
     font-size: 20px;
+    margin-right: 8px;
 
     &--active{
       color: @var-black;
@@ -242,8 +246,8 @@
   .menu__item-link-white {
     color: @var-white;
     font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    // padding-left: 5px;
+    // padding-right: 5px;
 
     &--active {
       color: @var-white;
@@ -264,6 +268,5 @@
     font-size: 20px;
     line-height: 20px;
     padding: 17px 0px 17px 0px;
-    width: 245px;
   }
 }

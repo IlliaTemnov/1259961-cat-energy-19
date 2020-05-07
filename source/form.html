@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="preload" href="./js/script.min.js" as="script">
+  <link rel="preload" href="./js/main.min.js" as="script">
   <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="./fonts/oswaldregular.woff" as="font">
 
@@ -116,16 +116,13 @@
       </div>
     </form>
     <section class="map">
-      <div class="map__contacts contacts">
+      <div class="map__contacts contacts contacts--grey">
         <h3 class="contacts__title">
           <span>Приглашаем</span> к сотрудничеству дилеров!
         </h3>
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </p>
       </div>
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD8UlRs5qnQOIJkLo6-6tEBPn3NpFrRCo&callback=initMap">
-        </script>
       <div class="map__treasure" id="map">
         <span class="map__treasure-pin"></span>
       </div>
@@ -169,7 +166,9 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.min.js"></script>
+  <script async defer src="./js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD8UlRs5qnQOIJkLo6-6tEBPn3NpFrRCo&callback=initMap">
+  </script>
 </body>
 
 </html>
