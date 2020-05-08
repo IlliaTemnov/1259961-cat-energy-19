@@ -57,6 +57,14 @@
     margin: -1px 2px 12px;
 }
 
+.list-item__title-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    cursor: pointer;
+}
+
 .list-item__button {
     width: 100%;
     text-align: center;
@@ -86,6 +94,7 @@
     font-size: 16px;
     line-height: 16px;
     font-family: 'Oswald';
+    font-weight: 400;
     color: @var-black;
     margin: 0;
     text-transform: uppercase;
@@ -204,7 +213,7 @@
 
     .main-catalog__more-title {
         text-align: center;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 20px;
         line-height: 20px;
         width: 135px;
@@ -268,18 +277,22 @@
 @media(min-width: @desktop-width) {
 
     .main-catalog {
-        max-width: 1440px;
+        max-width: @desktop-width;
         margin: 0 auto;
+        padding: 0px 40px;
     }
     .main-catalog__list {
-        max-width: 1440px;
-        justify-content: space-between;
-        padding: 0px 110px;
+        max-width: 1220px;
+        justify-content: flex-start;
+    }
+
+    .main-catalog__list  li:nth-child(4n) {
+        margin-right: 0;
     }
 
     .main-catalog__title {
         width: 593px;
-        padding-left: 110px;
+        padding-left: 3px;
         padding-top: 33px;
     }
 
@@ -287,6 +300,13 @@
         width: 245px;
         padding: 38px 37px;
         position: relative;
+        margin-right: 80px;
+
+        &--white {
+            background-color: @var-white;
+            margin-right: 80px;
+            margin-bottom: 140px;
+        }
     }
 
     .list-item__button {

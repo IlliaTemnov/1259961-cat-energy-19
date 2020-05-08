@@ -13,31 +13,33 @@
   <link rel="preload" href="./fonts/oswaldregular.woff" as="font">
 </head>
 
-<body>
-  <header class="page-header">
-    <a href="#" class="logo">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-        <img src="./img/logo-mobile.svg" class="logo-header" width="191" height="39" alt="Корм для котшек и котов">
-      </picture>
-    </a>
-    <nav class="hamburger-menu menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle" tabindex="0">
-        <span></span>
-      </label>
-      <ul class="menu__box">
-        <li class="menu__item"><a href="index.html"
-            class="menu__item-link menu__item-link--active menu__item-link-white menu__item-link-white--active">Главная</a>
-        </li>
-        <li class="menu__item"><a href="catalog.html" class="menu__item-link  menu__item-link-white">Каталог
-            продукции</a></li>
-        <li class="menu__item"><a href="form.html" class="menu__item-link  menu__item-link-white">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<body class="index-page">
+  <div class="container">
+    <header class="page-header">
+      <a href="#" class="logo">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+          <img src="./img/logo-mobile.svg" class="logo-header" width="191" height="39" alt="Корм для котшек и котов">
+        </picture>
+      </a>
+      <nav class="hamburger-menu menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle" tabindex="0">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li class="menu__item"><a href="index.html"
+              class="menu__item-link menu__item-link--active menu__item-link-white menu__item-link-white--active">Главная</a>
+          </li>
+          <li class="menu__item"><a href="catalog.html" class="menu__item-link  menu__item-link-white">Каталог
+              продукции</a></li>
+          <li class="menu__item"><a href="form.html" class="menu__item-link  menu__item-link-white">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <main class="page-main">
     <section class="promo">
       <picture>
@@ -64,7 +66,8 @@
       </li>
       <li class="aims__item aims__item--moreweight">
         <h3 class="aims__item-title aims__item-title--moreweight">Набор массы</h3>
-        <p class="aims__item-description aims__item-description--moreweight">Заработать авторитет среди дворовых котов и
+        <p class="aims__item-description aims__item-description--moreweight">Заработать авторитет среди дворовых котов
+          и
           даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a href="#" class="aims__item-link">Каталог pro</a>
@@ -103,7 +106,8 @@
       <div class="example-container">
         <div class="example-wrap">
           <h2 class="example__title medium-title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy
             Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
             часов в день. </p>
@@ -123,7 +127,6 @@
           </div>
         </div>
         <div class="example__slider">
-          <div class="example__slider-background"></div>
           <ul class="example__slider-list slider-list">
             <li class="slider-list__item slider-list__item--before" id="result-before">
             </li>
@@ -131,11 +134,11 @@
             </li>
           </ul>
           <div class="example__slider-controls">
-            <label for="result-before" class=" controls controls--before">Было</label>
+            <div class="controls controls--before">Было</div>
             <div class="example__slider-controls-scale">
               <span class="example__slider-controls-scalescroll"></span>
             </div>
-            <label for="result-after" class=" controls controls--after">Стало</label>
+            <div class=" controls controls--after">Стало</div>
           </div>
         </div>
       </div>

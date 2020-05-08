@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    min-height: 595px;
-    justify-content: space-evenly;
+    min-height: 555px;
+    justify-content: space-between;
     align-items: stretch;
     padding: 0px 20px;
+    padding-bottom: 0;
     margin: 0;
+
     position: relative;
 }
 
@@ -22,6 +24,7 @@
     box-sizing: border-box;
     padding: 20px;
     position: relative;
+    margin-bottom: 20px;
     
     &::before {
         content: '';
@@ -146,10 +149,11 @@
     }
 
     .aims__item {
+        display: block;
         min-height: 372px;
         padding: 77px 280px 61px 53px;
-        margin-top: -5px;
         position: relative;
+        margin-bottom: 30px;
 
         &--lessweight::before {
             height: 193px;
@@ -185,14 +189,14 @@
         line-height: 37px;
         margin: 0;
         margin-left: 0px;
-        margin-bottom: -23px;
+        margin-bottom: 22px;
     }
 
     .aims__item-description {
         font-size: 16px;
         line-height: 24px;
         width: 384px;
-        margin-top: 0;
+        margin-bottom: 56px;
 
         &--moreweight {
             width: 344px;
@@ -210,8 +214,8 @@
 
         &::before {
             content: '';
-            right: -35px;
-            top: 4px;
+            right: -47px;
+            top: 10px;
         }
     }
 }
@@ -219,18 +223,21 @@
 @media(min-width: @desktop-width) {
     .aims {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         min-height: 372px;
-        max-width: 1440px;
+        max-width: @desktop-width;
         margin: 0 auto;
-        padding: 78px 110px;
+        padding: 75px 40px 0px 40px;
         align-items: stretch;
     }
 
     .aims__item {
+        display: flex;
         min-height: 372px;
-        padding: 81px 56px 60px 52px;
+        padding: 75px 56px 60px 52px;
         max-width: 570px;
+        margin-bottom: 75px;
 
         &--lessweight::before {
             height: 97px;
@@ -268,5 +275,14 @@
 
     .aims__item-description {
         width: 463px;
+        margin-bottom: 25px;
+    }
+
+    .aims__item-link {
+        &::before {
+            content: '';
+            right: -38px;
+            top: 5px;
+        }
     }
 }

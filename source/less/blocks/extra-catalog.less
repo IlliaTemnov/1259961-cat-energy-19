@@ -29,6 +29,13 @@
     }
 }
 
+.extra-title__link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .extra-catalog__list {
     display: flex;
     flex-direction: column;
@@ -112,6 +119,7 @@
     width: 100%;
     min-height: 289px;
     margin: 0;
+    background-color: @var-green;
     background-image: url(../img/gift-photo-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +127,7 @@
     color: @var-white;
     font-size: 16px;
     line-height: 20px;
-    padding: 188px 60px 40px 60px;
+    padding: 180px 38px 40px;
 
     &::before {
         content: '';
@@ -129,9 +137,16 @@
         height: 61px;
         background-image: url('../img/gift.png');
         background-repeat: no-repeat;
-        bottom: 56%;
-        left: 40%;
+        bottom: 164px;
+        left: 112px;
     }
+}
+
+.stock__description-wrapper {
+    width: 200px;
+    height: 70px;
+    box-sizing: border-box;
+    padding-top: 8px;
 }
 
 .stock__description-text {
@@ -243,6 +258,10 @@
             left: 13%;
         }
     }
+    .stock__description-wrapper {
+        width: 200px;
+        height: 70px;
+    }
     .stock__description-text {
         display: flex;
         flex-direction: column;
@@ -255,7 +274,7 @@
     
     .extra-catalog {
         min-height: 470px;
-        width: 1440px;
+        width: @desktop-width;
         margin-top: -85px;
         padding: 0;
         margin-bottom: 0;
@@ -263,8 +282,8 @@
 
     .extra-catalog__title {
         font-size: 36px;
-        width: 540px;
-        padding-left: 110px;
+        width: 100%;
+        padding-left: 43px;
         padding-bottom: 0;
         padding-top: 25px;
         margin: 0;
@@ -274,17 +293,17 @@
             position: absolute;
             display: block;
             background-color: @var-green;
-            width: 69px;
+            width: 5px;
             height: 3px;
             left: 0px;
             top: 50%+2px;  
         }
 
         &::before {
-            width: 957px;
+            width: 880px;
             height: 3px;
-            left: 483px;
-            top: 52%;
+            left: 417px;
+            top: 52%;   
         }
     }
 
@@ -292,9 +311,8 @@
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        padding: 54px 110px;
-        padding-bottom: 84px;
-        width: 1440px;
+        padding: 54px 40px 84px;
+        width:  @desktop-width;
         min-height: 0;
     }
 
@@ -359,7 +377,7 @@
         min-height: 289px;
         background-image: url(../img/gift-photo-desktop@1x.jpg);
         background-repeat: no-repeat;
-        padding: 190px 43px 43px;
+        padding: 190px 30px 43px;
         margin: 0;
 
         &::before {

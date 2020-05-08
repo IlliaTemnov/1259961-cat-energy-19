@@ -89,7 +89,7 @@
 .slider-list__item {
     min-height: 235px;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 
 .slider-list__item--before {
@@ -190,8 +190,7 @@
 @media(min-width: @tablet-width) {
 
     .example {
-        // background: linear-gradient(to top, @var-lightgrey 25%, white 75%);
-        background: none;
+        background: linear-gradient(to top,#f2f2f2 44%,#fff 34%);
         min-height: 1052px;
     }
 
@@ -338,7 +337,7 @@
     .slider-list__item {
         min-height: 548px;
         margin-bottom: 9px;
-        width: 101%;
+        width: 100%;
         padding: 0px 45px;
         box-sizing: border-box;
         background-size: 689px auto;
@@ -361,17 +360,6 @@
             }
         }
     }
-
-    .example__slider-background {
-        display: block;
-        height: 460px;
-        width: 100%;
-        position: absolute;
-        background-color: #eaeaea;
-        top: 185px;
-        left: 0;
-        z-index: 0;
-    }
 }
 
 @media(min-width: @desktop-width) {
@@ -385,11 +373,11 @@
         display: flex;
         flex-direction: row;
         min-height: 632px;
-        max-width: 1440px;
+        max-width: @desktop-width;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: transparent;
-        padding-left: 55px;
+        padding: 0 0 0 40px;
         margin-top: -55px;
     }
 
@@ -434,7 +422,7 @@
         width: 730px;
         margin-bottom: 0;
         background-size: 687px auto;
-        background-position: 30px -20px;
+        background-position: 44px -19px;
         z-index: 1;
         position: relative;
 
@@ -451,14 +439,6 @@
                 background-image: url('../img/after-desktop@2x.png');
             }
         }
-    }
-
-    .example__slider-background {
-        width: 1440px;
-        left: -654px;
-        top: 170px;
-        bottom: 0;
-        z-index: 0;
     }
 
     .example__slider {
@@ -484,8 +464,8 @@
         line-height: 14px;
         bottom: -10px;
         left: 15%;
-        background-color: #eaeaea;
-        border: 5px solid #eaeaea;
+        background-color: @var-lightgrey;
+        border: 5px solid @var-lightgrey;
 
         &--right {
             left: 12%;
@@ -499,10 +479,11 @@
 
     .example__slider-controls-scalescroll {
         margin-left: 48%; 
+        cursor: pointer;
     }
 
     .example__slider-controls-scale {
-        margin-left: 45px;
+        margin-left: 81px;
     }
 
     .example__slider-controls {
@@ -514,15 +495,18 @@
         &--before {
             margin-right: -73px;
             position: absolute;
-            left: 105px;
+            left: 124px;
             top: 0;
+            cursor: pointer;
         }
 
         &--after {
-            margin-right: -23px;
+            margin-right: -44px;
             position: absolute;
+            margin-top: -10px;
             right: 80px;
             top: 0;
+            cursor: pointer;
         }
     }
     

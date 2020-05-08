@@ -136,28 +136,31 @@
 
 @media(min-width: @desktop-width) {
 
+
     .page-footer__logo {
-        padding: 40px 22px 37px 72px;
+        padding: 40px 22px 37px 0px;
     }
 
     .page-footer__container {
         padding: 0px 40px;
-        max-width: 1440px;
+        max-width: @desktop-width;
         min-height: 150px;
         margin: 0 auto;
     }
 
-    .page-footer__social {
-        padding: 11px 52px 11px 22px;
+    .social {
+        padding: 8px 114px 11px 22px;
+        width: 266px;
     }
 
     .copyright {
-        padding-right: 70px;
+        padding-right: 0px;
         padding-top: 30px;
+        min-width: 180px;
     }
 
     .copyright__name {
-        margin-right: 23px;
+        margin-right: 0px;
         margin-bottom: 0;
     }
 }
