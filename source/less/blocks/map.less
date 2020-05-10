@@ -1,32 +1,30 @@
 .map {
-    position: relative;
+  position: relative;
 }
 
 .map__treasure {
-    display: block;
-    min-width: 320px;
-    min-height: 370px;
-    background-image: url('../img/map-mobile.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    position: relative;
-    z-index: 1;
-    min-height: 366px;
+  display: block;
+  min-width: 320px;
+  min-height: 370px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  z-index: 1;
 }
 
-@media(min-width: @tablet-width) {
-    .map__treasure {
-        min-width: 767px;
-        min-height: 400px;
-        background-image: url('../img/map-tablet.png');
-    }
-
+@media (min-width: @tablet-width) {
+  .map__treasure {
+    min-width: 767px;
+    min-height: 400px;
+    background-image: url("../img/map-tablet.png");
+  }
 }
 
-@media(min-width: @desktop-width) {
-    .map__treasure {
-        min-width: @desktop-width;
-        min-height: 400px;
-        background-image: url('../img/map-desktop.png');
-    }
+@media (min-width: @desktop-width) {
+  .map__treasure {
+    min-width: @desktop-width;
+    min-height: 400px;
+    background-image: url("../img/map-desktop.png");
+  }
 }

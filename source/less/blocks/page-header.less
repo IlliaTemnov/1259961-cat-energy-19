@@ -15,9 +15,11 @@
   margin-top: 10px;
   height: 39px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
@@ -45,7 +47,7 @@
   z-index: 1;
 }
 
-  /*гамбургер */
+/*гамбургер */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -57,16 +59,16 @@
 }
 
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -7px;
 }
 
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 7px;
 }
 
-  /* контейнер меню */
+/* контейнер меню */
 .menu__box {
   display: none;
   justify-content: space-around;
@@ -79,7 +81,8 @@
   padding: 0;
   background-color: @var-white;
 }
-  /* элементы меню */
+
+/* элементы меню */
 .menu__item {
   display: block;
   box-sizing: border-box;
@@ -102,14 +105,15 @@
   font-weight: 400;
   color: @var-black;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
   }
-    /* подчеркивание активного элемента */
+  /* подчеркивание активного элемента */
   &--active {
     display: inline-block;
     text-decoration: none;
@@ -140,17 +144,17 @@
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
-@media(min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .page-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-width: 768px;
     height: 85px;
-    padding: 24px 13px 0px 29px;
+    padding: 24px 13px 0 29px;
   }
 
   .logo-header {
@@ -189,7 +193,8 @@
     padding-bottom: 7px;
   }
 
-  .menu__item-link, .menu__item-link--active {
+  .menu__item-link,
+  .menu__item-link--active {
     font-size: 18px;
     line-height: 25px;
     // padding-left: 5px;
@@ -200,12 +205,12 @@
   .button--large {
     font-size: 20px;
     line-height: 20px;
-    padding: 17px 0px 17px 0px;
+    padding: 17px 0 17px 0;
     width: 245px;
   }
 }
 
-@media(min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .page-header {
     width: 1300px;
     height: 85px;
@@ -221,7 +226,7 @@
   }
 
   .menu__box {
-    background-color:  transparent;
+    background-color: transparent;
     width: 516px;
     height: auto;
     padding-top: 17px;
@@ -229,7 +234,7 @@
   }
 
   .menu__item {
-    background-color:  transparent;
+    background-color: transparent;
   }
 
   .menu__item-link {
@@ -237,7 +242,7 @@
     font-size: 20px;
     margin-right: 8px;
 
-    &--active{
+    &--active {
       color: @var-black;
       font-size: 20px;
       padding-bottom: 10px;
@@ -247,8 +252,6 @@
   .menu__item-link-white {
     color: @var-white;
     font-size: 20px;
-    // padding-left: 5px;
-    // padding-right: 5px;
 
     &--active {
       color: @var-white;
@@ -256,7 +259,8 @@
       border-bottom: 2px solid @var-white;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
@@ -268,6 +272,6 @@
   .button--large {
     font-size: 20px;
     line-height: 20px;
-    padding: 17px 0px 17px 0px;
+    padding: 17px 0 17px 0;
   }
 }
